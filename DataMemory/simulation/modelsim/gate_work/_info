@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ysmai/Desktop/MIPS/DataMemory/simulation/modelsim
+vDataMemory
+Z1 !s110 1658011237
+!i10b 1
+!s100 HAFkZM_c@YQXklziZ5oUi2
+IdOQ;>N[JCBELXAKM>GVkd3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1658011188
+Z4 8DataMemory_7_1200mv_100c_slow.vo
+Z5 FDataMemory_7_1200mv_100c_slow.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1658011237.000000
+Z8 !s107 DataMemory_7_1200mv_100c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|DataMemory_7_1200mv_100c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+n@data@memory
+vDataMemory_TB
+!s110 1658011238
+!i10b 1
+!s100 dnm;W83:UaXl`:13PINTX2
+IcQ>]FP79bX]V3AYR8@l_R1
+R2
+R0
+w1658010946
+8C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v
+FC:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1658011238.000000
+!s107 C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/MIPS/DataMemory|C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/DataMemory
+R12
+n@data@memory_@t@b
+vhard_block
+R1
+!i10b 1
+!s100 >g`KPf7kcY0UkW_453VF`3
+IJB0zn9`I7_<2Ykn<N50;R3
+R2
+R0
+R3
+R4
+R5
+L0 1544
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
