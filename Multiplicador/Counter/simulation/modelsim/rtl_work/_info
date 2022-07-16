@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/simulation/modelsim
+vCounter
+!s110 1653532090
+!i10b 1
+!s100 SEXd?<_jQ=Z1aImFLYE^c1
+ILM13XoUjd@c@Q;2j6Bmd90
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1653531859
+8D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter.v
+FD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter.v
+L0 1
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1653532090.000000
+!s107 D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter|D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter.v|
+!i113 1
+Z3 o-vlog01compat -work work
+Z4 !s92 -vlog01compat -work work +incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter
+Z5 tCvgOpt 0
+n@counter
+vCounter_TB
+!s110 1653532091
+!i10b 1
+!s100 2hSnB2CSQZ:`QCcCz03z=0
+I]ZSLfzdzBIckb`1D<e6A>0
+R1
+R0
+w1653531929
+8D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter_TB.v
+FD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter_TB.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1653532091.000000
+!s107 D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter|D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Counter/Counter_TB.v|
+!i113 1
+R3
+R4
+R5
+n@counter_@t@b

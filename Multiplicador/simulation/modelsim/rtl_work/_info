@@ -1,0 +1,148 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ysmai/Desktop/MIPS/Multiplicador/simulation/modelsim
+vACC
+Z1 !s110 1658007411
+!i10b 1
+!s100 :JUC`Q:^eQfVL`X?dRFKm3
+IS=F9`FKWj@1NY84I^fh:C0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1658006792
+8C:/Users/ysmai/Desktop/MIPS/Multiplicador/ACC/ACC.v
+FC:/Users/ysmai/Desktop/MIPS/Multiplicador/ACC/ACC.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1658007411.000000
+!s107 C:/Users/ysmai/Desktop/MIPS/Multiplicador/ACC/ACC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/ACC|C:/Users/ysmai/Desktop/MIPS/Multiplicador/ACC/ACC.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/ACC
+Z6 tCvgOpt 0
+n@a@c@c
+vAdder
+R1
+!i10b 1
+!s100 e_0zj6?9jmk6KUg6ZlV=b1
+I5LP[MImDljC>K2Mm<YPDS2
+R2
+R0
+w1658000955
+8C:/Users/ysmai/Desktop/MIPS/Multiplicador/Adder/Adder.v
+FC:/Users/ysmai/Desktop/MIPS/Multiplicador/Adder/Adder.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ysmai/Desktop/MIPS/Multiplicador/Adder/Adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Adder|C:/Users/ysmai/Desktop/MIPS/Multiplicador/Adder/Adder.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Adder
+R6
+n@adder
+vControl
+R1
+!i10b 1
+!s100 HPzLB]90YnIGQDnDCX;6I1
+I]_<>Uo<95]9oXXYb[4jeI0
+R2
+R0
+w1658007136
+8C:/Users/ysmai/Desktop/MIPS/Multiplicador/Control/Control.v
+FC:/Users/ysmai/Desktop/MIPS/Multiplicador/Control/Control.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ysmai/Desktop/MIPS/Multiplicador/Control/Control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Control|C:/Users/ysmai/Desktop/MIPS/Multiplicador/Control/Control.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Control
+R6
+n@control
+vCounter
+Z7 !s110 1658007412
+!i10b 1
+!s100 FolET7?8BKX`59NfAj]M>3
+IOlTo;YL2P`O6[::cU<K;g2
+R2
+R0
+w1658007219
+8C:/Users/ysmai/Desktop/MIPS/Multiplicador/Counter/Counter.v
+FC:/Users/ysmai/Desktop/MIPS/Multiplicador/Counter/Counter.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ysmai/Desktop/MIPS/Multiplicador/Counter/Counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Counter|C:/Users/ysmai/Desktop/MIPS/Multiplicador/Counter/Counter.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Counter
+R6
+n@counter
+vMultiplicador
+R1
+!i10b 1
+!s100 hkRJEM4]iefO>?XF6;aJU0
+If1bmRb1V>ZcRi<U=:U@D>0
+R2
+R0
+w1658006561
+8C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador.v
+FC:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador|C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador.v|
+!i113 1
+R5
+Z8 !s92 -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador
+R6
+n@multiplicador
+vMultiplicador_TB
+R7
+!i10b 1
+!s100 Ka;2SUFCN==o>e==?T32V2
+I1fz24E@DdZR`;1L5LM5Ea3
+R2
+R0
+w1658007353
+8C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador_TB.v
+FC:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador_TB.v
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1658007412.000000
+!s107 C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador|C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador_TB.v|
+!i113 1
+R5
+R8
+R6
+n@multiplicador_@t@b

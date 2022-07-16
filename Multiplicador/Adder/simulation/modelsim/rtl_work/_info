@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/simulation/modelsim
+vAdder
+Z1 !s110 1653531466
+!i10b 1
+!s100 J6@@9l]<llR9@QnhEgiKU3
+I8P=V6DaW6Y4Q3n32kBXNK1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1653531258
+8D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder.v
+FD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1653531466.000000
+!s107 D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder|D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder
+Z7 tCvgOpt 0
+n@adder
+vAdder_TB
+R1
+!i10b 1
+!s100 7d4E40F=IJG`dW`J[Q[hF0
+I19T95^0o0fdTi=KFXT8R`3
+R2
+R0
+w1653531317
+8D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder_TB.v
+FD:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder_TB.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder|D:/GitMultiplicador/Multiplicador-Shift-Add/Multiplicador/Adder/Adder_TB.v|
+!i113 1
+R5
+R6
+R7
+n@adder_@t@b
