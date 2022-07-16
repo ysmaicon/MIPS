@@ -12,69 +12,69 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador {C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:36:51 on Jul 16,2022
+# Start time: 19:10:05 on Jul 16,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador" C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador.v 
 # -- Compiling module Multiplicador
 # 
 # Top level modules:
 # 	Multiplicador
-# End time: 18:36:51 on Jul 16,2022, Elapsed time: 0:00:00
+# End time: 19:10:05 on Jul 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/ACC {C:/Users/ysmai/Desktop/MIPS/Multiplicador/ACC/ACC.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:36:51 on Jul 16,2022
+# Start time: 19:10:06 on Jul 16,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/ACC" C:/Users/ysmai/Desktop/MIPS/Multiplicador/ACC/ACC.v 
 # -- Compiling module ACC
 # 
 # Top level modules:
 # 	ACC
-# End time: 18:36:51 on Jul 16,2022, Elapsed time: 0:00:00
+# End time: 19:10:06 on Jul 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Adder {C:/Users/ysmai/Desktop/MIPS/Multiplicador/Adder/Adder.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:36:51 on Jul 16,2022
+# Start time: 19:10:06 on Jul 16,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Adder" C:/Users/ysmai/Desktop/MIPS/Multiplicador/Adder/Adder.v 
 # -- Compiling module Adder
 # 
 # Top level modules:
 # 	Adder
-# End time: 18:36:51 on Jul 16,2022, Elapsed time: 0:00:00
+# End time: 19:10:06 on Jul 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Control {C:/Users/ysmai/Desktop/MIPS/Multiplicador/Control/Control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:36:51 on Jul 16,2022
+# Start time: 19:10:06 on Jul 16,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Control" C:/Users/ysmai/Desktop/MIPS/Multiplicador/Control/Control.v 
 # -- Compiling module Control
 # 
 # Top level modules:
 # 	Control
-# End time: 18:36:51 on Jul 16,2022, Elapsed time: 0:00:00
+# End time: 19:10:06 on Jul 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Counter {C:/Users/ysmai/Desktop/MIPS/Multiplicador/Counter/Counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:36:51 on Jul 16,2022
+# Start time: 19:10:06 on Jul 16,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador/Counter" C:/Users/ysmai/Desktop/MIPS/Multiplicador/Counter/Counter.v 
 # -- Compiling module Counter
 # 
 # Top level modules:
 # 	Counter
-# End time: 18:36:52 on Jul 16,2022, Elapsed time: 0:00:01
+# End time: 19:10:06 on Jul 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador {C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador_TB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:36:52 on Jul 16,2022
+# Start time: 19:10:06 on Jul 16,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ysmai/Desktop/MIPS/Multiplicador" C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador_TB.v 
 # -- Compiling module Multiplicador_TB
 # 
 # Top level modules:
 # 	Multiplicador_TB
-# End time: 18:36:52 on Jul 16,2022, Elapsed time: 0:00:00
+# End time: 19:10:06 on Jul 16,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  Multiplicador_TB
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" Multiplicador_TB 
-# Start time: 18:36:52 on Jul 16,2022
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  Multiplicador_TB
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" Multiplicador_TB 
+# Start time: 19:10:06 on Jul 16,2022
 # Loading work.Multiplicador_TB
 # Loading work.Multiplicador
 # Loading work.ACC
@@ -85,9 +85,9 @@
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: ysmai  Hostname: DESKTOP-H68LC3I  ProcessID: 6780
-#           Attempting to use alternate WLF file "./wlfta5kie5".
+#           Attempting to use alternate WLF file "./wlftink5t3".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfta5kie5
+#           Using alternate file: ./wlftink5t3
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
@@ -97,5 +97,5 @@
 # ** Note: $stop    : C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador_TB.v(57)
 #    Time: 1200 ns  Iteration: 0  Instance: /Multiplicador_TB
 # Break in Module Multiplicador_TB at C:/Users/ysmai/Desktop/MIPS/Multiplicador/Multiplicador_TB.v line 57
-# End time: 18:38:00 on Jul 16,2022, Elapsed time: 0:01:08
+# End time: 19:10:21 on Jul 16,2022, Elapsed time: 0:00:15
 # Errors: 0, Warnings: 2

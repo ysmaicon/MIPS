@@ -1,18 +1,20 @@
-Fitter Status : Successful - Wed May 25 23:21:42 2022
+Fitter Status : Successful - Sat Jul 16 19:06:48 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Control
 Top-level Entity Name : Control
-Family : MAX 10
-Device : 10M02DCU324A6G
+Family : Cyclone IV GX
+Device : EP4CGX150DF31I7AD
 Timing Models : Final
-Total logic elements : 7 / 2,304 ( < 1 % )
-    Total combinational functions : 6 / 2,304 ( < 1 % )
-    Dedicated logic registers : 4 / 2,304 ( < 1 % )
+Total logic elements : 6 / 149,760 ( < 1 % )
+    Total combinational functions : 5 / 149,760 ( < 1 % )
+    Dedicated logic registers : 4 / 149,760 ( < 1 % )
 Total registers : 4
-Total pins : 9 / 160 ( 6 % )
+Total pins : 10 / 508 ( 2 % )
 Total virtual pins : 0
-Total memory bits : 0 / 110,592 ( 0 % )
-Embedded Multiplier 9-bit elements : 0 / 32 ( 0 % )
-Total PLLs : 0 / 2 ( 0 % )
-UFM blocks : 0 / 1 ( 0 % )
-ADC blocks : 0
+Total memory bits : 0 / 6,635,520 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 720 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )

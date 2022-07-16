@@ -1,16 +1,18 @@
-Analysis & Synthesis Status : Successful - Wed May 25 23:10:41 2022
+Analysis & Synthesis Status : Successful - Sat Jul 16 19:03:13 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ACC
 Top-level Entity Name : ACC
-Family : MAX 10
-Total logic elements : 12
-    Total combinational functions : 12
-    Dedicated logic registers : 9
-Total registers : 9
-Total pins : 22
+Family : Cyclone IV GX
+Total logic elements : 35
+    Total combinational functions : 35
+    Dedicated logic registers : 33
+Total registers : 33
+Total pins : 71
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
 Total PLLs : 0
-UFM blocks : 0
-ADC blocks : 0

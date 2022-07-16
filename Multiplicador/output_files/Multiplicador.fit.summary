@@ -1,18 +1,20 @@
-Fitter Status : Successful - Sat Jul 16 18:36:30 2022
+Fitter Status : Successful - Sat Jul 16 19:09:42 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Multiplicador
 Top-level Entity Name : Multiplicador
-Family : MAX 10
-Device : 10M50DAF484C7G
+Family : Cyclone IV GX
+Device : EP4CGX150DF31I7AD
 Timing Models : Final
-Total logic elements : 70 / 49,760 ( < 1 % )
-    Total combinational functions : 69 / 49,760 ( < 1 % )
-    Dedicated logic registers : 45 / 49,760 ( < 1 % )
+Total logic elements : 70 / 149,760 ( < 1 % )
+    Total combinational functions : 69 / 149,760 ( < 1 % )
+    Dedicated logic registers : 45 / 149,760 ( < 1 % )
 Total registers : 45
-Total pins : 69 / 360 ( 19 % )
+Total pins : 69 / 508 ( 14 % )
 Total virtual pins : 0
-Total memory bits : 0 / 1,677,312 ( 0 % )
-Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
-Total PLLs : 0 / 4 ( 0 % )
-UFM blocks : 0 / 1 ( 0 % )
-ADC blocks : 0 / 2 ( 0 % )
+Total memory bits : 0 / 6,635,520 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 720 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )
