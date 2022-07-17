@@ -25,6 +25,7 @@ FUNCTION PLL
 
 RETURNS (
 	c0,
+	c1,
 	locked,
 	scandataout,
 	scandone
