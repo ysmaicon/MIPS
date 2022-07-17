@@ -1,0 +1,77 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/MIPS/Arquitetura-Mips/MIPS/Extend/simulation/modelsim
+vextend
+Z1 !s110 1658029533
+!i10b 1
+!s100 m3TRS<[P=X00AD`?8eDlC2
+IXDoSUG2A;YWRP?FiAdB322
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1658028667
+Z4 8extend_7_1200mv_100c_slow.vo
+Z5 Fextend_7_1200mv_100c_slow.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1658029533.000000
+Z8 !s107 extend_7_1200mv_100c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|extend_7_1200mv_100c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vextend_TB
+!s110 1658029534
+!i10b 1
+!s100 UU7jl4l<Zn4l=ddGmBD5b1
+I7CFDAG>I92jB9T<A3>;Dn3
+R2
+R0
+w1658029493
+8D:/MIPS/Arquitetura-Mips/MIPS/Extend/extend_TB.v
+FD:/MIPS/Arquitetura-Mips/MIPS/Extend/extend_TB.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/MIPS/Arquitetura-Mips/MIPS/Extend/extend_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/MIPS/Arquitetura-Mips/MIPS/Extend|D:/MIPS/Arquitetura-Mips/MIPS/Extend/extend_TB.v|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+D:/MIPS/Arquitetura-Mips/MIPS/Extend
+R12
+nextend_@t@b
+vhard_block
+R1
+!i10b 1
+!s100 ^7C3LECUNcUFc>L]YL6Gi1
+IA:?n77m]aLIRV2egeh3hH1
+R2
+R0
+R3
+R4
+R5
+L0 992
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
