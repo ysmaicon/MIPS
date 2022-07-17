@@ -1,0 +1,125 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 312 184)
+	(text "PLL" (rect 145 0 172 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 168 25 180)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "inclk0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "inclk0" (rect 4 50 29 63)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 72 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "areset" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "areset" (rect 4 66 33 79)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 72 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "scanclk" (rect 0 0 43 14)(font "Arial" (font_size 8)))
+		(text "scanclk" (rect 4 82 39 95)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 72 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "scandata" (rect 0 0 53 14)(font "Arial" (font_size 8)))
+		(text "scandata" (rect 4 98 47 111)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 72 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "scanclkena" (rect 0 0 64 14)(font "Arial" (font_size 8)))
+		(text "scanclkena" (rect 4 114 57 127)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 72 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "configupdate" (rect 0 0 74 14)(font "Arial" (font_size 8)))
+		(text "configupdate" (rect 4 130 65 143)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 72 144))
+	)
+	(port
+		(pt 312 64)
+		(output)
+		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c0" (rect 296 50 306 63)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 312 80)
+		(output)
+		(text "scandataout" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "scandataout" (rect 248 66 306 79)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 312 96)
+		(output)
+		(text "scandone" (rect 0 0 56 14)(font "Arial" (font_size 8)))
+		(text "scandone" (rect 260 82 306 95)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 312 112)
+		(output)
+		(text "locked" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "locked" (rect 277 98 306 111)(font "Arial" (font_size 8)))
+	)
+	(drawing
+		(text "Cyclone IV GX" (rect 227 169 515 349)(font "Arial" ))
+		(text "inclk0 frequency: 10.000 MHz" (rect 82 92 287 195)(font "Arial" ))
+		(text "Operation Mode: Normal" (rect 82 105 263 221)(font "Arial" ))
+		(text "Clk " (rect 83 126 180 263)(font "Arial" ))
+		(text "Ratio" (rect 104 126 228 263)(font "Arial" ))
+		(text "Ph (dg)" (rect 130 126 289 263)(font "Arial" ))
+		(text "DC (%)" (rect 164 126 358 263)(font "Arial" ))
+		(text "c0" (rect 86 140 180 291)(font "Arial" ))
+		(text "1/34" (rect 106 140 229 291)(font "Arial" ))
+		(text "0.00" (rect 136 140 288 291)(font "Arial" ))
+		(text "50.00" (rect 168 140 357 291)(font "Arial" ))
+		(line (pt 0 0)(pt 313 0))
+		(line (pt 313 0)(pt 313 186))
+		(line (pt 0 186)(pt 313 186))
+		(line (pt 0 0)(pt 0 186))
+		(line (pt 80 124)(pt 196 124))
+		(line (pt 80 137)(pt 196 137))
+		(line (pt 80 151)(pt 196 151))
+		(line (pt 80 124)(pt 80 151))
+		(line (pt 101 124)(pt 101 151)(line_width 3))
+		(line (pt 127 124)(pt 127 151)(line_width 3))
+		(line (pt 161 124)(pt 161 151)(line_width 3))
+		(line (pt 195 124)(pt 195 151))
+		(line (pt 72 48)(pt 239 48))
+		(line (pt 239 48)(pt 239 168))
+		(line (pt 72 168)(pt 239 168))
+		(line (pt 72 48)(pt 72 168))
+		(line (pt 311 64)(pt 239 64))
+		(line (pt 311 80)(pt 239 80))
+		(line (pt 311 96)(pt 239 96))
+		(line (pt 311 112)(pt 239 112))
+	)
+)
