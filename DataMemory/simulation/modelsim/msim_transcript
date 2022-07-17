@@ -12,30 +12,30 @@
 # 
 # vlog -vlog01compat -work work +incdir+. {DataMemory_7_1200mv_100c_slow.vo}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:40:37 on Jul 16,2022
+# Start time: 15:43:56 on Jul 17,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." DataMemory_7_1200mv_100c_slow.vo 
 # -- Compiling module DataMemory
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	DataMemory
-# End time: 19:40:37 on Jul 16,2022, Elapsed time: 0:00:00
+# End time: 15:43:57 on Jul 17,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/DataMemory {C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 19:40:38 on Jul 16,2022
+# Start time: 15:43:57 on Jul 17,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/ysmai/Desktop/MIPS/DataMemory" C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v 
 # -- Compiling module DataMemory_TB
 # 
 # Top level modules:
 # 	DataMemory_TB
-# End time: 19:40:38 on Jul 16,2022, Elapsed time: 0:00:00
+# End time: 15:43:57 on Jul 17,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  DataMemory_TB
 # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs=""+acc"" DataMemory_TB 
-# Start time: 19:40:38 on Jul 16,2022
+# Start time: 15:43:57 on Jul 17,2022
 # Loading work.DataMemory_TB
 # Loading work.DataMemory
 # Loading work.hard_block
@@ -70,5 +70,5 @@
 # ** Note: $stop    : C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v(63)
 #    Time: 750 ns  Iteration: 0  Instance: /DataMemory_TB
 # Break in Module DataMemory_TB at C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v line 63
-# End time: 19:42:30 on Jul 16,2022, Elapsed time: 0:01:52
+# End time: 15:44:12 on Jul 17,2022, Elapsed time: 0:00:15
 # Errors: 2, Warnings: 1

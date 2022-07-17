@@ -1,0 +1,360 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "07/17/2022 15:40:39"
+
+// 
+// Device: Altera EP4CGX150DF31I7AD Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module ADDRDecoding (
+	Address,
+	Saida);
+input 	[15:0] Address;
+output 	Saida;
+
+// Design Ports Information
+// Address[0]	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[1]	=>  Location: PIN_E15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[2]	=>  Location: PIN_AA20,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[3]	=>  Location: PIN_K21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[4]	=>  Location: PIN_E6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[5]	=>  Location: PIN_AH11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[6]	=>  Location: PIN_AB16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[7]	=>  Location: PIN_AA18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Saida	=>  Location: PIN_AE16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[12]	=>  Location: PIN_AK17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[13]	=>  Location: PIN_AB17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[14]	=>  Location: PIN_AF18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[15]	=>  Location: PIN_AE17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[10]	=>  Location: PIN_AD16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[8]	=>  Location: PIN_AH18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[9]	=>  Location: PIN_AK18,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Address[11]	=>  Location: PIN_AG17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("ADDRDecoding_v.sdo");
+// synopsys translate_on
+
+wire \Address[0]~input_o ;
+wire \Address[1]~input_o ;
+wire \Address[2]~input_o ;
+wire \Address[3]~input_o ;
+wire \Address[4]~input_o ;
+wire \Address[5]~input_o ;
+wire \Address[6]~input_o ;
+wire \Address[7]~input_o ;
+wire \Saida~output_o ;
+wire \Address[15]~input_o ;
+wire \Address[14]~input_o ;
+wire \Address[12]~input_o ;
+wire \Address[13]~input_o ;
+wire \Saida~0_combout ;
+wire \Address[10]~input_o ;
+wire \Address[9]~input_o ;
+wire \Address[11]~input_o ;
+wire \Address[8]~input_o ;
+wire \Saida~1_combout ;
+wire \Saida~2_combout ;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X63_Y0_N2
+cycloneiv_io_obuf \Saida~output (
+	.i(\Saida~2_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\Saida~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \Saida~output .bus_hold = "false";
+defparam \Saida~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X66_Y0_N15
+cycloneiv_io_ibuf \Address[15]~input (
+	.i(Address[15]),
+	.ibar(gnd),
+	.o(\Address[15]~input_o ));
+// synopsys translate_off
+defparam \Address[15]~input .bus_hold = "false";
+defparam \Address[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X66_Y0_N8
+cycloneiv_io_ibuf \Address[14]~input (
+	.i(Address[14]),
+	.ibar(gnd),
+	.o(\Address[14]~input_o ));
+// synopsys translate_off
+defparam \Address[14]~input .bus_hold = "false";
+defparam \Address[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X66_Y0_N1
+cycloneiv_io_ibuf \Address[12]~input (
+	.i(Address[12]),
+	.ibar(gnd),
+	.o(\Address[12]~input_o ));
+// synopsys translate_off
+defparam \Address[12]~input .bus_hold = "false";
+defparam \Address[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X66_Y0_N22
+cycloneiv_io_ibuf \Address[13]~input (
+	.i(Address[13]),
+	.ibar(gnd),
+	.o(\Address[13]~input_o ));
+// synopsys translate_off
+defparam \Address[13]~input .bus_hold = "false";
+defparam \Address[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X66_Y1_N8
+cycloneiv_lcell_comb \Saida~0 (
+// Equation(s):
+// \Saida~0_combout  = (\Address[15]~input_o ) # ((\Address[14]~input_o ) # ((\Address[12]~input_o ) # (\Address[13]~input_o )))
+
+	.dataa(\Address[15]~input_o ),
+	.datab(\Address[14]~input_o ),
+	.datac(\Address[12]~input_o ),
+	.datad(\Address[13]~input_o ),
+	.cin(gnd),
+	.combout(\Saida~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Saida~0 .lut_mask = 16'hFFFE;
+defparam \Saida~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X63_Y0_N8
+cycloneiv_io_ibuf \Address[10]~input (
+	.i(Address[10]),
+	.ibar(gnd),
+	.o(\Address[10]~input_o ));
+// synopsys translate_off
+defparam \Address[10]~input .bus_hold = "false";
+defparam \Address[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X68_Y0_N22
+cycloneiv_io_ibuf \Address[9]~input (
+	.i(Address[9]),
+	.ibar(gnd),
+	.o(\Address[9]~input_o ));
+// synopsys translate_off
+defparam \Address[9]~input .bus_hold = "false";
+defparam \Address[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X68_Y0_N1
+cycloneiv_io_ibuf \Address[11]~input (
+	.i(Address[11]),
+	.ibar(gnd),
+	.o(\Address[11]~input_o ));
+// synopsys translate_off
+defparam \Address[11]~input .bus_hold = "false";
+defparam \Address[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X68_Y0_N15
+cycloneiv_io_ibuf \Address[8]~input (
+	.i(Address[8]),
+	.ibar(gnd),
+	.o(\Address[8]~input_o ));
+// synopsys translate_off
+defparam \Address[8]~input .bus_hold = "false";
+defparam \Address[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X67_Y1_N24
+cycloneiv_lcell_comb \Saida~1 (
+// Equation(s):
+// \Saida~1_combout  = (\Address[10]~input_o  & (!\Address[11]~input_o  & ((\Address[9]~input_o ) # (\Address[8]~input_o )))) # (!\Address[10]~input_o  & (!\Address[9]~input_o  & (\Address[11]~input_o  & !\Address[8]~input_o )))
+
+	.dataa(\Address[10]~input_o ),
+	.datab(\Address[9]~input_o ),
+	.datac(\Address[11]~input_o ),
+	.datad(\Address[8]~input_o ),
+	.cin(gnd),
+	.combout(\Saida~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Saida~1 .lut_mask = 16'h0A18;
+defparam \Saida~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X67_Y1_N10
+cycloneiv_lcell_comb \Saida~2 (
+// Equation(s):
+// \Saida~2_combout  = (\Saida~0_combout ) # (!\Saida~1_combout )
+
+	.dataa(\Saida~0_combout ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\Saida~1_combout ),
+	.cin(gnd),
+	.combout(\Saida~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Saida~2 .lut_mask = 16'hAAFF;
+defparam \Saida~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X44_Y91_N22
+cycloneiv_io_ibuf \Address[0]~input (
+	.i(Address[0]),
+	.ibar(gnd),
+	.o(\Address[0]~input_o ));
+// synopsys translate_off
+defparam \Address[0]~input .bus_hold = "false";
+defparam \Address[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X46_Y91_N1
+cycloneiv_io_ibuf \Address[1]~input (
+	.i(Address[1]),
+	.ibar(gnd),
+	.o(\Address[1]~input_o ));
+// synopsys translate_off
+defparam \Address[1]~input .bus_hold = "false";
+defparam \Address[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X86_Y0_N15
+cycloneiv_io_ibuf \Address[2]~input (
+	.i(Address[2]),
+	.ibar(gnd),
+	.o(\Address[2]~input_o ));
+// synopsys translate_off
+defparam \Address[2]~input .bus_hold = "false";
+defparam \Address[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X111_Y91_N22
+cycloneiv_io_ibuf \Address[3]~input (
+	.i(Address[3]),
+	.ibar(gnd),
+	.o(\Address[3]~input_o ));
+// synopsys translate_off
+defparam \Address[3]~input .bus_hold = "false";
+defparam \Address[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X21_Y91_N8
+cycloneiv_io_ibuf \Address[4]~input (
+	.i(Address[4]),
+	.ibar(gnd),
+	.o(\Address[4]~input_o ));
+// synopsys translate_off
+defparam \Address[4]~input .bus_hold = "false";
+defparam \Address[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X30_Y0_N8
+cycloneiv_io_ibuf \Address[5]~input (
+	.i(Address[5]),
+	.ibar(gnd),
+	.o(\Address[5]~input_o ));
+// synopsys translate_off
+defparam \Address[5]~input .bus_hold = "false";
+defparam \Address[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X39_Y0_N1
+cycloneiv_io_ibuf \Address[6]~input (
+	.i(Address[6]),
+	.ibar(gnd),
+	.o(\Address[6]~input_o ));
+// synopsys translate_off
+defparam \Address[6]~input .bus_hold = "false";
+defparam \Address[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X77_Y0_N8
+cycloneiv_io_ibuf \Address[7]~input (
+	.i(Address[7]),
+	.ibar(gnd),
+	.o(\Address[7]~input_o ));
+// synopsys translate_off
+defparam \Address[7]~input .bus_hold = "false";
+defparam \Address[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign Saida = \Saida~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_NCEO~	=>  Location: PIN_AE7,	 I/O Standard: 2.5 V,	 Current Strength: 16mA
+// ~ALTERA_DATA0~	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_G9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_NCSO~	=>  Location: PIN_B4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_B3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_NCSO~~padout ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_NCSO~~ibuf_o ;
+
+
+endmodule
