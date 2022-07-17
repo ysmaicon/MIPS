@@ -1,0 +1,77 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/MIPS/Arquitetura-Mips/MIPS/Control/simulation/modelsim
+vcontrol
+Z1 !s110 1658098675
+!i10b 1
+!s100 egT3Pc[OzIRV4g^mL?J]S1
+IzJFebjMWO:cYoczOSFe4S2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1658098057
+Z4 8control_7_1200mv_100c_slow.vo
+Z5 Fcontrol_7_1200mv_100c_slow.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1658098675.000000
+Z8 !s107 control_7_1200mv_100c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|control_7_1200mv_100c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vcontrol_TB
+!s110 1658098676
+!i10b 1
+!s100 G:LHS?3amWHWgaohPd1m<0
+IiM7^[hlVIZPHI;c3M8IBS2
+R2
+R0
+w1658098635
+8D:/MIPS/Arquitetura-Mips/MIPS/Control/control_TB.v
+FD:/MIPS/Arquitetura-Mips/MIPS/Control/control_TB.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/MIPS/Arquitetura-Mips/MIPS/Control/control_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/MIPS/Arquitetura-Mips/MIPS/Control|D:/MIPS/Arquitetura-Mips/MIPS/Control/control_TB.v|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+D:/MIPS/Arquitetura-Mips/MIPS/Control
+R12
+ncontrol_@t@b
+vhard_block
+R1
+!i10b 1
+!s100 UXSP<0j0N]afDQE_DlRJM3
+IQAi<`890l1DgSP3@=Bb2V2
+R2
+R0
+R3
+R4
+R5
+L0 1532
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
