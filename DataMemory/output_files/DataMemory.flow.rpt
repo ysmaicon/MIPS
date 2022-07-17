@@ -1,5 +1,5 @@
 Flow report for DataMemory
-Sat Jul 16 19:39:48 2022
+Sun Jul 17 15:43:24 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Jul 16 19:39:48 2022       ;
+; Flow Status                        ; Successful - Sun Jul 17 15:43:24 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DataMemory                                  ;
 ; Top-level Entity Name              ; DataMemory                                  ;
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/16/2022 19:39:03 ;
+; Start date & time ; 07/17/2022 15:42:33 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DataMemory          ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 13374259604776.165801114315872         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 13374259604776.165808335311516         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; DataMemory_TB  ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DataMemory_TB                          ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -106,12 +106,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:14     ; 1.0                     ; 4827 MB             ; 00:00:30                           ;
-; Fitter               ; 00:00:15     ; 1.0                     ; 5829 MB             ; 00:00:24                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4751 MB             ; 00:00:05                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4829 MB             ; 00:00:30                           ;
+; Fitter               ; 00:00:17     ; 1.0                     ; 5824 MB             ; 00:00:25                           ;
+; Assembler            ; 00:00:06     ; 1.0                     ; 4751 MB             ; 00:00:05                           ;
 ; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4867 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4718 MB             ; 00:00:01                           ;
-; Total                ; 00:00:40     ; --                      ; --                  ; 00:01:03                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4720 MB             ; 00:00:02                           ;
+; Total                ; 00:00:47     ; --                      ; --                  ; 00:01:05                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

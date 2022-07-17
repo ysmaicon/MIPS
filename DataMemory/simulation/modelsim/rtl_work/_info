@@ -9,48 +9,48 @@ z2
 cModel Technology
 Z0 dC:/Users/ysmai/Desktop/MIPS/DataMemory/simulation/modelsim
 vDataMemory
-Z1 !s110 1658010847
+!s110 1658083412
 !i10b 1
-!s100 ;i?65BPdnAQC5IXKVc@A50
-I<0^Q1IzN@dGhR_BS[Q>]J0
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s100 Pbfh^@]F:6;RGY2iV=?ZL2
+I`c@aXIW2_^QjCZHAcWiU=2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1658010774
+w1658011559
 8C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory.v
 FC:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory.v
 L0 1
-Z3 OV;L;10.5b;63
+Z2 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1658010847.000000
+!s108 1658083412.000000
 !s107 C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/MIPS/DataMemory|C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory.v|
 !i113 1
-Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/DataMemory
-Z7 tCvgOpt 0
+Z3 o-vlog01compat -work work
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/DataMemory
+Z5 tCvgOpt 0
 n@data@memory
 vDataMemory_TB
-R1
+!s110 1658083413
 !i10b 1
-!s100 mIWNTM^Jke6T?05Qe:C^U0
-Ii5FZeCLSA]7Ezec7YIHG?1
-R2
+!s100 PI[fCgd2IUkO@nMm06JC73
+IoGJnXTYkE3O[R43>WN4BK3
+R1
 R0
-w1658010785
+w1658011743
 8C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v
 FC:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v
 L0 2
-R3
+R2
 r1
 !s85 0
 31
-R4
+!s108 1658083413.000000
 !s107 C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ysmai/Desktop/MIPS/DataMemory|C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v|
 !i113 1
+R3
+R4
 R5
-R6
-R7
 n@data@memory_@t@b
