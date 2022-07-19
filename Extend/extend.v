@@ -3,7 +3,7 @@ module extend(
 	output [31:0] imm
 );
 
-	// extends the signal by taking bit 15 of instr as the basis 
+	// extensão do sinal tomando o bit 15 de instr 
 	assign imm = {{16{instr[15]}}, instr[15:0]};
 
 endmodule
