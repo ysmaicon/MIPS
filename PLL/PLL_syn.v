@@ -33,7 +33,7 @@
 //refer to the applicable agreement for further details.
 
 
-//altpll bandwidth_type="AUTO" clk0_divide_by=1 clk0_duty_cycle=50 clk0_multiply_by=1 clk0_phase_shift="0" clk1_divide_by=34 clk1_duty_cycle=50 clk1_multiply_by=1 clk1_phase_shift="0" compensate_clock="CLK0" device_family="Cyclone IV GX" inclk0_input_frequency=10000 intended_device_family="Cyclone IV GX" lpm_hint="CBX_MODULE_PREFIX=PLL" operation_mode="normal" pll_type="AUTO" port_clk0="PORT_USED" port_clk1="PORT_USED" port_clk2="PORT_UNUSED" port_clk3="PORT_UNUSED" port_clk4="PORT_UNUSED" port_clk5="PORT_UNUSED" port_extclk0="PORT_UNUSED" port_extclk1="PORT_UNUSED" port_extclk2="PORT_UNUSED" port_extclk3="PORT_UNUSED" port_inclk1="PORT_UNUSED" port_phasecounterselect="PORT_UNUSED" port_phasedone="PORT_UNUSED" port_scandata="PORT_USED" port_scandataout="PORT_USED" scan_chain_mif_file="PLL.mif" self_reset_on_loss_lock="OFF" width_clock=5 areset clk configupdate inclk locked scanclk scanclkena scandata scandataout scandone
+//altpll bandwidth_type="AUTO" clk0_divide_by=1 clk0_duty_cycle=50 clk0_multiply_by=1 clk0_phase_shift="0" clk1_divide_by=34 clk1_duty_cycle=50 clk1_multiply_by=1 clk1_phase_shift="0" compensate_clock="CLK0" device_family="Cyclone IV GX" inclk0_input_frequency=10000 intended_device_family="Cyclone IV GX" lpm_hint="CBX_MODULE_PREFIX=PLL" operation_mode="normal" pll_type="AUTO" port_clk0="PORT_USED" port_clk1="PORT_USED" port_clk2="PORT_UNUSED" port_clk3="PORT_UNUSED" port_clk4="PORT_UNUSED" port_clk5="PORT_UNUSED" port_extclk0="PORT_UNUSED" port_extclk1="PORT_UNUSED" port_extclk2="PORT_UNUSED" port_extclk3="PORT_UNUSED" port_inclk1="PORT_UNUSED" port_phasecounterselect="PORT_UNUSED" port_phasedone="PORT_UNUSED" port_scandata="PORT_UNUSED" port_scandataout="PORT_UNUSED" self_reset_on_loss_lock="OFF" width_clock=5 areset clk inclk locked
 //VERSION_BEGIN 18.1 cbx_altclkbuf 2018:09:12:13:04:24:SJ cbx_altiobuf_bidir 2018:09:12:13:04:24:SJ cbx_altiobuf_in 2018:09:12:13:04:24:SJ cbx_altiobuf_out 2018:09:12:13:04:24:SJ cbx_altpll 2018:09:12:13:04:24:SJ cbx_cycloneii 2018:09:12:13:04:24:SJ cbx_lpm_add_sub 2018:09:12:13:04:24:SJ cbx_lpm_compare 2018:09:12:13:04:24:SJ cbx_lpm_counter 2018:09:12:13:04:24:SJ cbx_lpm_decode 2018:09:12:13:04:24:SJ cbx_lpm_mux 2018:09:12:13:04:24:SJ cbx_mgl 2018:09:12:13:10:36:SJ cbx_nadder 2018:09:12:13:04:24:SJ cbx_stratix 2018:09:12:13:04:24:SJ cbx_stratixii 2018:09:12:13:04:24:SJ cbx_stratixiii 2018:09:12:13:04:24:SJ cbx_stratixv 2018:09:12:13:04:24:SJ cbx_util_mgl 2018:09:12:13:04:24:SJ  VERSION_END
 // synthesis VERILOG_INPUT_VERSION VERILOG_2001
 // altera message_off 10463
@@ -47,33 +47,17 @@ module  PLL_altpll
 	( 
 	areset,
 	clk,
-	configupdate,
 	inclk,
-	locked,
-	scanclk,
-	scanclkena,
-	scandata,
-	scandataout,
-	scandone) /* synthesis synthesis_clearbox=1 */;
+	locked) /* synthesis synthesis_clearbox=1 */;
 	input   areset;
 	output   [4:0]  clk;
-	input   configupdate;
 	input   [1:0]  inclk;
 	output   locked;
-	input   scanclk;
-	input   scanclkena;
-	input   scandata;
-	output   scandataout;
-	output   scandone;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
 	tri0   areset;
-	tri0   configupdate;
 	tri0   [1:0]  inclk;
-	tri0   scanclk;
-	tri1   scanclkena;
-	tri0   scandata;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
 `endif
@@ -81,8 +65,6 @@ module  PLL_altpll
 	wire  [4:0]   wire_pll1_clk;
 	wire  wire_pll1_fbout;
 	wire  wire_pll1_locked;
-	wire  wire_pll1_scandataout;
-	wire  wire_pll1_scandone;
 
 	cycloneiv_pll   pll1
 	( 
@@ -90,7 +72,6 @@ module  PLL_altpll
 	.areset(areset),
 	.clk(wire_pll1_clk),
 	.clkbad(),
-	.configupdate(configupdate),
 	.fbin(wire_pll1_fbout),
 	.fbout(wire_pll1_fbout),
 	.fref(),
@@ -98,11 +79,8 @@ module  PLL_altpll
 	.inclk(inclk),
 	.locked(wire_pll1_locked),
 	.phasedone(),
-	.scanclk(scanclk),
-	.scanclkena(scanclkena),
-	.scandata(scandata),
-	.scandataout(wire_pll1_scandataout),
-	.scandone(wire_pll1_scandone),
+	.scandataout(),
+	.scandone(),
 	.vcooverrange(),
 	.vcounderrange()
 	`ifndef FORMAL_VERIFICATION
@@ -110,10 +88,14 @@ module  PLL_altpll
 	`endif
 	,
 	.clkswitch(1'b0),
+	.configupdate(1'b0),
 	.pfdena(1'b1),
 	.phasecounterselect({3{1'b0}}),
 	.phasestep(1'b0),
-	.phaseupdown(1'b0)
+	.phaseupdown(1'b0),
+	.scanclk(1'b0),
+	.scanclkena(1'b1),
+	.scandata(1'b0)
 	`ifndef FORMAL_VERIFICATION
 	// synopsys translate_on
 	`endif
@@ -132,14 +114,11 @@ module  PLL_altpll
 		pll1.inclk0_input_frequency = 10000,
 		pll1.operation_mode = "normal",
 		pll1.pll_type = "auto",
-		pll1.scan_chain_mif_file = "PLL.mif",
 		pll1.self_reset_on_loss_lock = "off",
 		pll1.lpm_type = "cycloneiv_pll";
 	assign
 		clk = {wire_pll1_clk[4:0]},
-		locked = wire_pll1_locked,
-		scandataout = wire_pll1_scandataout,
-		scandone = wire_pll1_scandone;
+		locked = wire_pll1_locked;
 endmodule //PLL_altpll
 //VALID FILE
 
@@ -149,35 +128,20 @@ endmodule //PLL_altpll
 // synopsys translate_on
 module PLL (
 	areset,
-	configupdate,
 	inclk0,
-	scanclk,
-	scanclkena,
-	scandata,
 	c0,
 	c1,
-	locked,
-	scandataout,
-	scandone)/* synthesis synthesis_clearbox = 1 */;
+	locked)/* synthesis synthesis_clearbox = 1 */;
 
 	input	  areset;
-	input	  configupdate;
 	input	  inclk0;
-	input	  scanclk;
-	input	  scanclkena;
-	input	  scandata;
 	output	  c0;
 	output	  c1;
 	output	  locked;
-	output	  scandataout;
-	output	  scandone;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
 	tri0	  areset;
-	tri0	  configupdate;
-	tri0	  scanclkena;
-	tri0	  scandata;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
 `endif
@@ -185,8 +149,6 @@ module PLL (
 	wire [0:0] sub_wire2 = 1'h0;
 	wire [4:0] sub_wire3;
 	wire  sub_wire6;
-	wire  sub_wire7;
-	wire  sub_wire8;
 	wire  sub_wire0 = inclk0;
 	wire [1:0] sub_wire1 = {sub_wire2, sub_wire0};
 	wire [1:1] sub_wire5 = sub_wire3[1:1];
@@ -194,20 +156,12 @@ module PLL (
 	wire  c0 = sub_wire4;
 	wire  c1 = sub_wire5;
 	wire  locked = sub_wire6;
-	wire  scandataout = sub_wire7;
-	wire  scandone = sub_wire8;
 
 	PLL_altpll	PLL_altpll_component (
 				.areset (areset),
-				.configupdate (configupdate),
 				.inclk (sub_wire1),
-				.scanclk (scanclk),
-				.scanclkena (scanclkena),
-				.scandata (scandata),
 				.clk (sub_wire3),
-				.locked (sub_wire6),
-				.scandataout (sub_wire7),
-				.scandone (sub_wire8));
+				.locked (sub_wire6));
 
 endmodule
 
@@ -287,7 +241,7 @@ endmodule
 // Retrieval info: PRIVATE: PLL_TARGET_HARCOPY_CHECK NUMERIC "0"
 // Retrieval info: PRIVATE: PRIMARY_CLK_COMBO STRING "inclk0"
 // Retrieval info: PRIVATE: RECONFIG_FILE STRING "PLL.mif"
-// Retrieval info: PRIVATE: SACN_INPUTS_CHECK STRING "1"
+// Retrieval info: PRIVATE: SACN_INPUTS_CHECK STRING "0"
 // Retrieval info: PRIVATE: SCAN_FEATURE_ENABLED STRING "1"
 // Retrieval info: PRIVATE: SELF_RESET_LOCK_LOSS STRING "0"
 // Retrieval info: PRIVATE: SHORT_SCAN_RADIO STRING "0"
@@ -330,7 +284,7 @@ endmodule
 // Retrieval info: CONSTANT: PORT_CLKBAD1 STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: PORT_CLKLOSS STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: PORT_CLKSWITCH STRING "PORT_UNUSED"
-// Retrieval info: CONSTANT: PORT_CONFIGUPDATE STRING "PORT_USED"
+// Retrieval info: CONSTANT: PORT_CONFIGUPDATE STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: PORT_FBIN STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: PORT_INCLK0 STRING "PORT_USED"
 // Retrieval info: CONSTANT: PORT_INCLK1 STRING "PORT_UNUSED"
@@ -342,11 +296,11 @@ endmodule
 // Retrieval info: CONSTANT: PORT_PHASEUPDOWN STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: PORT_PLLENA STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: PORT_SCANACLR STRING "PORT_UNUSED"
-// Retrieval info: CONSTANT: PORT_SCANCLK STRING "PORT_USED"
-// Retrieval info: CONSTANT: PORT_SCANCLKENA STRING "PORT_USED"
-// Retrieval info: CONSTANT: PORT_SCANDATA STRING "PORT_USED"
-// Retrieval info: CONSTANT: PORT_SCANDATAOUT STRING "PORT_USED"
-// Retrieval info: CONSTANT: PORT_SCANDONE STRING "PORT_USED"
+// Retrieval info: CONSTANT: PORT_SCANCLK STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANCLKENA STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANDATA STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANDATAOUT STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANDONE STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: PORT_SCANREAD STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: PORT_SCANWRITE STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: PORT_clk0 STRING "PORT_USED"
@@ -367,31 +321,18 @@ endmodule
 // Retrieval info: CONSTANT: PORT_extclk3 STRING "PORT_UNUSED"
 // Retrieval info: CONSTANT: SELF_RESET_ON_LOSS_LOCK STRING "OFF"
 // Retrieval info: CONSTANT: WIDTH_CLOCK NUMERIC "5"
-// Retrieval info: CONSTANT: scan_chain_mif_file STRING "PLL.mif"
 // Retrieval info: USED_PORT: @clk 0 0 5 0 OUTPUT_CLK_EXT VCC "@clk[4..0]"
 // Retrieval info: USED_PORT: areset 0 0 0 0 INPUT GND "areset"
 // Retrieval info: USED_PORT: c0 0 0 0 0 OUTPUT_CLK_EXT VCC "c0"
 // Retrieval info: USED_PORT: c1 0 0 0 0 OUTPUT_CLK_EXT VCC "c1"
-// Retrieval info: USED_PORT: configupdate 0 0 0 0 INPUT GND "configupdate"
 // Retrieval info: USED_PORT: inclk0 0 0 0 0 INPUT_CLK_EXT GND "inclk0"
 // Retrieval info: USED_PORT: locked 0 0 0 0 OUTPUT GND "locked"
-// Retrieval info: USED_PORT: scanclk 0 0 0 0 INPUT_CLK_EXT VCC "scanclk"
-// Retrieval info: USED_PORT: scanclkena 0 0 0 0 INPUT GND "scanclkena"
-// Retrieval info: USED_PORT: scandata 0 0 0 0 INPUT GND "scandata"
-// Retrieval info: USED_PORT: scandataout 0 0 0 0 OUTPUT VCC "scandataout"
-// Retrieval info: USED_PORT: scandone 0 0 0 0 OUTPUT VCC "scandone"
 // Retrieval info: CONNECT: @areset 0 0 0 0 areset 0 0 0 0
-// Retrieval info: CONNECT: @configupdate 0 0 0 0 configupdate 0 0 0 0
 // Retrieval info: CONNECT: @inclk 0 0 1 1 GND 0 0 0 0
 // Retrieval info: CONNECT: @inclk 0 0 1 0 inclk0 0 0 0 0
-// Retrieval info: CONNECT: @scanclk 0 0 0 0 scanclk 0 0 0 0
-// Retrieval info: CONNECT: @scanclkena 0 0 0 0 scanclkena 0 0 0 0
-// Retrieval info: CONNECT: @scandata 0 0 0 0 scandata 0 0 0 0
 // Retrieval info: CONNECT: c0 0 0 0 0 @clk 0 0 1 0
 // Retrieval info: CONNECT: c1 0 0 0 0 @clk 0 0 1 1
 // Retrieval info: CONNECT: locked 0 0 0 0 @locked 0 0 0 0
-// Retrieval info: CONNECT: scandataout 0 0 0 0 @scandataout 0 0 0 0
-// Retrieval info: CONNECT: scandone 0 0 0 0 @scandone 0 0 0 0
 // Retrieval info: GEN_FILE: TYPE_NORMAL PLL.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL PLL.ppf TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL PLL.inc TRUE
@@ -399,7 +340,6 @@ endmodule
 // Retrieval info: GEN_FILE: TYPE_NORMAL PLL.bsf TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL PLL_inst.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL PLL_bb.v TRUE
-// Retrieval info: GEN_FILE: TYPE_NORMAL PLL.mif TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL PLL_syn.v TRUE
 // Retrieval info: LIB_FILE: altera_mf
 // Retrieval info: CBX_MODULE_PREFIX: ON

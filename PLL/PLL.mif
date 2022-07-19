@@ -18,7 +18,7 @@
 --    Device Speed Grade: -
 --    PLL Scan Chain: Cyclone III GX GPLL (144 bits)
 --    File Name: D:/MIPS/Arquitetura-Mips/MIPS/PLL//PLL.mif
---    Generated: Sun Jul 17 12:23:55 2022
+--    Generated: Tue Jul 19 13:54:34 2022
 
 WIDTH=1;
 DEPTH=144;

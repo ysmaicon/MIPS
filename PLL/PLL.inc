@@ -16,17 +16,11 @@
 FUNCTION PLL 
 (
 	areset,
-	configupdate,
-	inclk0,
-	scanclk,
-	scanclkena,
-	scandata
+	inclk0
 )
 
 RETURNS (
 	c0,
 	c1,
-	locked,
-	scandataout,
-	scandone
+	locked
 );
