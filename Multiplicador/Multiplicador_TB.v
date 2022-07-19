@@ -54,6 +54,6 @@ module Multiplicador_TB();
 	end
 	
 	initial begin
-		#1200 $stop;
+		#2000 $stop;
 	end                                                   
 endmodule 

@@ -2,18 +2,20 @@ module Control (Idle, Done, Load, Sh, Ad, Clk, St, M, K, Rst);
 	input Clk, Rst;
 	input St, M, K;
 	output reg Idle, Done, Load, Sh, Ad;
-	reg [1:0]state;
+	
+	// registro de estados
+	(*keep=1*) reg [1:0]state;
 
 
-	// Declaracao dos estados
+	// declaração dos estados
 	parameter S0 = 0, S1 = 1, S2 = 2, S3 = 3;
 
-	// Determinacao do proximo estado 
+	// determinação do próximo estado 
 	// baseado no estado atual
 	always @ (posedge Clk, posedge Rst) begin
 		if (Rst)
 			begin
-				state <= S0;
+				state <= S3;
 		end
 		else
 			begin
@@ -52,8 +54,8 @@ module Control (Idle, Done, Load, Sh, Ad, Clk, St, M, K, Rst);
 			end
 	end
 
-	// Determinacao das saidas
-	// da maquina de estados
+	// determinação das saidas
+	// da máquina de estados
 	always @ (state or St or M or K) begin
 		Idle = 0; Load = 0; Ad = 0; Done = 0; Sh = 0;
 		case (state)

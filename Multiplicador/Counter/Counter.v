@@ -1,27 +1,23 @@
-module Counter(Load, Clk, K, Rst);
+module Counter(Load, Clk, Rst, K);
 
 	input Load, Clk, Rst;
 	output K;
 
-	reg[7:0] n;
+	reg[5:0] n;
 
 	assign K = (n == 32) ? 1'b1: 1'b0;
 
 	always @(posedge Clk, posedge Rst) begin
-		if (Rst)
+		if(Rst)
+			n <= 0;
+		else 
+			if(Load == 1)
 			begin
-				n <= 0;
+				n <= 1;
 			end
-		else
+			else if (n >= 1)
 			begin
-				if (Load == 1)
-				begin
-					n <= 1;
-				end
-				else if (n >= 1)
-				begin
-					n <= n + 1;
-				end
+				n <= n + 1;
 			end
 	end
 
