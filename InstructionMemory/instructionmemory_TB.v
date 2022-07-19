@@ -1,13 +1,15 @@
-`timescale 1ns/10ps
+`timescale 1ns/100ps
 
 module instructionmemory_TB;
 
 	reg CLK_SYS;
+	reg rst;
 	reg[9:0] pc;
 	wire [31:0] instruction;
 
 	instructionmemory DUT(
 		.CLK_SYS(CLK_SYS),
+		.rst(rst),
 		.pc(pc),
 		.instruction(instruction)
 	);
@@ -16,6 +18,8 @@ module instructionmemory_TB;
 
 	initial begin
 		CLK_SYS = 0;
+		rst = 1;
+		#10 rst = 0;
 		
 		for (i=0;i<32;i=i+1)
 		begin
