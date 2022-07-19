@@ -132,6 +132,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
 					"name" : "We",
 					"strict" : false
 				},

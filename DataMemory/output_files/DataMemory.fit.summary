@@ -1,15 +1,15 @@
-Fitter Status : Successful - Sun Jul 17 15:43:08 2022
+Fitter Status : Successful - Tue Jul 19 04:38:31 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-Revision Name : DataMemory
-Top-level Entity Name : DataMemory
+Revision Name : datamemory
+Top-level Entity Name : datamemory
 Family : Cyclone IV GX
 Device : EP4CGX150DF31I7AD
 Timing Models : Final
-Total logic elements : 2 / 149,760 ( < 1 % )
-    Total combinational functions : 2 / 149,760 ( < 1 % )
-    Dedicated logic registers : 0 / 149,760 ( 0 % )
-Total registers : 0
-Total pins : 76 / 508 ( 15 % )
+Total logic elements : 45 / 149,760 ( < 1 % )
+    Total combinational functions : 45 / 149,760 ( < 1 % )
+    Dedicated logic registers : 33 / 149,760 ( < 1 % )
+Total registers : 33
+Total pins : 77 / 508 ( 15 % )
 Total virtual pins : 0
 Total memory bits : 32,768 / 6,635,520 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 720 ( 0 % )

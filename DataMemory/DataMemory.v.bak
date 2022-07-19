@@ -1,30 +1,49 @@
-module DataMemory(
-	input Clk,
+module datamemory
+#(parameter DATA_WIDTH = 32, parameter ADDR_WIDTH = 10)
+(
+	input Clk, rst
 	input We,
-	input Cs,
-	input [9:0] Addr;
-	input [31: 0] Data_in,
-	output  reg[31:0] Data_out
+	input [(ADDR_WIDTH-1):0] Addr,
+	input [(DATA_WIDTH-1):0] Data_in,
+	output reg[(DATA_WIDTH-1):0] Data_out
 );
+
+	reg [DATA_WIDTH-1:0] MemoryRam [2**ADDR_WIDTH-1:0];
+	reg [ADDR_WIDTH-1:0] addrReg;
 	
-	reg [31:0] Memory [0:1023];
+	integer i;
 
 	initial begin
-		Memory[0] = 32'b0000_0000_0000_0000_0000_0111_1101_0001; // A = 2001
-		Memory[1] = 32'b0000_0000_0000_0000_0000_1111_1010_0001; // B = 4001
-		Memory[2] = 32'b0000_0000_0000_0000_0001_0011_1000_1001; // C = 5001
-		Memory[3] = 32'b0000_0000_0000_0000_0000_1011_1011_1001; // D = 3001
+		// [0] -> A = 2001 ; 
+		// [1] => B = 4001 ; 
+		// [2] => C = 5001 ; 
+		// [3] => D = 3001
+		MemoryRam[0] = 32'b0000_0000_0000_0000_0000_0111_1101_0001;
+		MemoryRam[1] = 32'b0000_0000_0000_0000_0000_1111_1010_0001;
+		MemoryRam[2] = 32'b0000_0000_0000_0000_0001_0011_1000_1001;
+		MemoryRam[3] = 32'b0000_0000_0000_0000_0000_1011_1011_1001;
+		
+		// inicializando as outras posições da memória
+		for(i = 4; i < 2**ADDR_WIDTH; i = i + 1)
+			MemoryRam[i] = {DATA_WIDTH{1'b0}};
+			
 	end
+	
+	assign Data_out = ram[addrReg];
 
-	always @(posedge Clk) begin
-		if (We)
-			begin
-				Memory[Addr-256] <= Data_in;
-			end
-		else
-			begin
-				Data_out <= Memory[Addr-256];
-			end
+	always @(posedge Clk or posedge rst) begin
+		if(rst)
+			addr_reg <= 0;
+		else begin	
+			if (~We) // write: 0; read = 1
+				begin
+				   MemoryRam[addr] <= Data_in;
+				end
+			else
+				begin
+					addrReg <= addr;
+				end
+		end
 	end
 
 endmodule

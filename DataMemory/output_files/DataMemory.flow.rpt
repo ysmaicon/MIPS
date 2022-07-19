@@ -1,5 +1,5 @@
-Flow report for DataMemory
-Sun Jul 17 15:43:24 2022
+Flow report for datamemory
+Tue Jul 19 04:39:01 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sun Jul 17 15:43:24 2022       ;
+; Flow Status                        ; Successful - Tue Jul 19 04:39:01 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                      ; DataMemory                                  ;
-; Top-level Entity Name              ; DataMemory                                  ;
+; Revision Name                      ; datamemory                                  ;
+; Top-level Entity Name              ; datamemory                                  ;
 ; Family                             ; Cyclone IV GX                               ;
 ; Device                             ; EP4CGX150DF31I7AD                           ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 2 / 149,760 ( < 1 % )                       ;
-;     Total combinational functions  ; 2 / 149,760 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 0 / 149,760 ( 0 % )                         ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 76 / 508 ( 15 % )                           ;
+; Total logic elements               ; 45 / 149,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 45 / 149,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 33 / 149,760 ( < 1 % )                      ;
+; Total registers                    ; 33                                          ;
+; Total pins                         ; 77 / 508 ( 15 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 32,768 / 6,635,520 ( < 1 % )                ;
 ; Embedded Multiplier 9-bit elements ; 0 / 720 ( 0 % )                             ;
@@ -68,9 +68,9 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/17/2022 15:42:33 ;
+; Start date & time ; 07/19/2022 04:37:12 ;
 ; Main task         ; Compilation         ;
-; Revision Name     ; DataMemory          ;
+; Revision Name     ; datamemory          ;
 +-------------------+---------------------+
 
 
@@ -79,15 +79,15 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 13374259604776.165808335311516         ; --            ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; DataMemory_TB  ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DataMemory_TB                          ; --            ; --          ; eda_simulation ;
+; COMPILER_SIGNATURE_ID                ; 62580489088565.165821623125432         ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; datamemory_TB  ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; datamemory_TB                          ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                  ; DataMemory_TB.v                        ; --            ; --          ; DataMemory_TB  ;
-; EDA_TEST_BENCH_MODULE_NAME           ; DataMemory_TB                          ; --            ; --          ; DataMemory_TB  ;
-; EDA_TEST_BENCH_NAME                  ; DataMemory_TB                          ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; datamemory_TB.v                        ; --            ; --          ; datamemory_TB  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; datamemory_TB                          ; --            ; --          ; datamemory_TB  ;
+; EDA_TEST_BENCH_NAME                  ; datamemory_TB                          ; --            ; --          ; eda_simulation ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 100                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; -40                                    ; --            ; --          ; --             ;
@@ -106,12 +106,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4829 MB             ; 00:00:30                           ;
-; Fitter               ; 00:00:17     ; 1.0                     ; 5824 MB             ; 00:00:25                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4751 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4867 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4720 MB             ; 00:00:02                           ;
-; Total                ; 00:00:47     ; --                      ; --                  ; 00:01:05                           ;
+; Analysis & Synthesis ; 00:00:39     ; 1.0                     ; 4817 MB             ; 00:01:13                           ;
+; Fitter               ; 00:00:41     ; 1.0                     ; 5622 MB             ; 00:00:53                           ;
+; Assembler            ; 00:00:12     ; 1.0                     ; 4753 MB             ; 00:00:11                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.0                     ; 4840 MB             ; 00:00:07                           ;
+; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4721 MB             ; 00:00:04                           ;
+; Total                ; 00:01:45     ; --                      ; --                  ; 00:02:28                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -120,22 +120,22 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-H68LC3I  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-H68LC3I  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-H68LC3I  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-H68LC3I  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-H68LC3I  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-5JCMOTN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-5JCMOTN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-5JCMOTN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-5JCMOTN  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-5JCMOTN  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off DataMemory -c DataMemory
-quartus_fit --read_settings_files=off --write_settings_files=off DataMemory -c DataMemory
-quartus_asm --read_settings_files=off --write_settings_files=off DataMemory -c DataMemory
-quartus_sta DataMemory -c DataMemory
-quartus_eda --read_settings_files=off --write_settings_files=off DataMemory -c DataMemory
+quartus_map --read_settings_files=on --write_settings_files=off datamemory -c datamemory
+quartus_fit --read_settings_files=off --write_settings_files=off datamemory -c datamemory
+quartus_asm --read_settings_files=off --write_settings_files=off datamemory -c datamemory
+quartus_sta datamemory -c datamemory
+quartus_eda --read_settings_files=off --write_settings_files=off datamemory -c datamemory
 
 
 

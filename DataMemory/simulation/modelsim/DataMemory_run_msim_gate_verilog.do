@@ -5,11 +5,11 @@ if {[file exists gate_work]} {
 vlib gate_work
 vmap work gate_work
 
-vlog -vlog01compat -work work +incdir+. {DataMemory_7_1200mv_100c_slow.vo}
+vlog -vlog01compat -work work +incdir+. {datamemory_7_1200mv_100c_slow.vo}
 
-vlog -vlog01compat -work work +incdir+C:/Users/ysmai/Desktop/MIPS/DataMemory {C:/Users/ysmai/Desktop/MIPS/DataMemory/DataMemory_TB.v}
+vlog -vlog01compat -work work +incdir+D:/MIPS/Arquitetura-Mips/MIPS/DataMemory {D:/MIPS/Arquitetura-Mips/MIPS/DataMemory/datamemory_TB.v}
 
-vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  DataMemory_TB
+vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_mf_ver -L altera_ver -L lpm_ver -L sgate_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L gate_work -L work -voptargs="+acc"  datamemory_TB
 
 add wave *
 view structure

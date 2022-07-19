@@ -1,19 +1,18 @@
 `timescale 1ns/100ps
-module DataMemory_TB();
+module datamemory_TB();
 	
-	reg Clk;
+	reg Clk, rst;
 	reg [31:0] Addr;
 	wire [31:0] Data_out;
 	reg [31:0] Data_in;
-	reg Cs;
 	reg We;
 
 	DataMemory DUT (
 		.Clk(Clk),
+		.rst(rst),
 		.Addr(Addr),
 		.Data_out(Data_out),
 		.Data_in(Data_in),
-		.Cs(Cs),
 		.We(We)
 	);
 	
@@ -22,7 +21,9 @@ module DataMemory_TB();
 	end
 
 	initial begin
+		rst = 1;
 		Clk = 0;
+		#20 rst = 0;
 		We = 0;
 		
 		Addr = 0;
@@ -32,9 +33,9 @@ module DataMemory_TB();
 		#50
 		Addr = 2;
 		#50
-		addr = 3;
+		Addr = 3;
 		#50
-		addr = 4;
+		Addr = 4;
 		
 		We = 1;
 		Addr = 0;
@@ -62,7 +63,7 @@ module DataMemory_TB();
 	end
 	
 	initial begin
-		#900 $stop;
+		#750 $stop;
 	end
 	
 endmodule 
