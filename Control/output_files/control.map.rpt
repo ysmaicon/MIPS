@@ -1,5 +1,5 @@
 Analysis & Synthesis report for control
-Sun Jul 17 19:46:18 2022
+Tue Jul 19 03:03:15 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jul 17 19:46:18 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jul 19 03:03:14 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; control                                     ;
 ; Top-level Entity Name              ; control                                     ;
@@ -262,7 +262,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -272,7 +272,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Jul 17 19:45:31 2022
+    Info: Processing started: Tue Jul 19 03:02:12 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off control -c control
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -283,23 +283,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
 Info (12127): Elaborating entity "control" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at control.v(6): object "a_reg" assigned a value but never read File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 6
 Warning (10036): Verilog HDL or VHDL warning at control.v(6): object "b_reg" assigned a value but never read File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 6
-Warning (10235): Verilog HDL Always Construct warning at control.v(72): variable "op" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 72
-Warning (10235): Verilog HDL Always Construct warning at control.v(76): variable "shamt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 76
-Warning (10235): Verilog HDL Always Construct warning at control.v(77): variable "rs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 77
+Warning (10235): Verilog HDL Always Construct warning at control.v(71): variable "op" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 71
+Warning (10235): Verilog HDL Always Construct warning at control.v(75): variable "shamt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 75
+Warning (10235): Verilog HDL Always Construct warning at control.v(76): variable "rs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 76
+Warning (10230): Verilog HDL assignment warning at control.v(76): truncated value with size 5 to match size of target (1) File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 76
+Warning (10235): Verilog HDL Always Construct warning at control.v(77): variable "rt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 77
 Warning (10230): Verilog HDL assignment warning at control.v(77): truncated value with size 5 to match size of target (1) File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 77
-Warning (10235): Verilog HDL Always Construct warning at control.v(78): variable "rt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 78
-Warning (10230): Verilog HDL assignment warning at control.v(78): truncated value with size 5 to match size of target (1) File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 78
-Warning (10235): Verilog HDL Always Construct warning at control.v(86): variable "funct" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 86
-Warning (10235): Verilog HDL Always Construct warning at control.v(125): variable "rs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 125
-Warning (10230): Verilog HDL assignment warning at control.v(125): truncated value with size 5 to match size of target (1) File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 125
-Warning (10235): Verilog HDL Always Construct warning at control.v(134): variable "rt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 134
-Warning (10235): Verilog HDL Always Construct warning at control.v(139): variable "rs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 139
+Warning (10235): Verilog HDL Always Construct warning at control.v(85): variable "funct" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 85
+Warning (10235): Verilog HDL Always Construct warning at control.v(124): variable "rs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 124
+Warning (10230): Verilog HDL assignment warning at control.v(124): truncated value with size 5 to match size of target (1) File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 124
+Warning (10235): Verilog HDL Always Construct warning at control.v(133): variable "rt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 133
+Warning (10235): Verilog HDL Always Construct warning at control.v(138): variable "rs" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 138
+Warning (10230): Verilog HDL assignment warning at control.v(138): truncated value with size 5 to match size of target (1) File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 138
+Warning (10235): Verilog HDL Always Construct warning at control.v(139): variable "rt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 139
 Warning (10230): Verilog HDL assignment warning at control.v(139): truncated value with size 5 to match size of target (1) File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 139
-Warning (10235): Verilog HDL Always Construct warning at control.v(140): variable "rt" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 140
-Warning (10230): Verilog HDL assignment warning at control.v(140): truncated value with size 5 to match size of target (1) File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 140
-Warning (10240): Verilog HDL Always Construct warning at control.v(56): inferring latch(es) for variable "wr_rd", which holds its previous value in one or more paths through the always construct File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 56
-Info (10041): Inferred latch for "wr_rd" at control.v(56) File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 56
-Warning (13012): Latch wr_rd has unsafe behavior File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 56
+Warning (10240): Verilog HDL Always Construct warning at control.v(55): inferring latch(es) for variable "wr_rd", which holds its previous value in one or more paths through the always construct File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 55
+Info (10041): Inferred latch for "wr_rd" at control.v(55) File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 55
+Warning (13012): Latch wr_rd has unsafe behavior File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 55
     Warning (13013): Ports D and ENA on the latch are fed by the same signal instr[26] File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 2
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "output_control[27]" is stuck at GND File: D:/MIPS/Arquitetura-Mips/MIPS/Control/control.v Line: 4
@@ -315,9 +315,9 @@ Info (21057): Implemented 94 device resources after synthesis - the final resour
     Info (21059): Implemented 32 output pins
     Info (21061): Implemented 30 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Sun Jul 17 19:46:18 2022
-    Info: Elapsed time: 00:00:47
-    Info: Total CPU time (on all processors): 00:01:21
+    Info: Peak virtual memory: 4820 megabytes
+    Info: Processing ended: Tue Jul 19 03:03:15 2022
+    Info: Elapsed time: 00:01:03
+    Info: Total CPU time (on all processors): 00:01:29
 
 

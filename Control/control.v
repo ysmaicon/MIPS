@@ -2,20 +2,20 @@ module control (
 	input [31:0] instr,
 	output [31:0] output_control
 );
-	// registers a, b and c
+	// registros a, b e c
 	reg a_reg, b_reg;
 	
-	// selects between ALU or multiplier
+	// seleciona entre ALU ou multiplicador
    // 0: ALU
 	// 1: *
 	reg d_sel;
 	
-	// selects between B or imm's output to enter as second term in ALU
+	// seleciona entre B ou saída do imm para entrar como segundo operando na ALU
 	// 0: B
 	// 1: IMM
 	reg c_sel;
 	
-	// selects the operation in ALU (+, -, &, |):
+	// seleciona a operação na ALU (+, -, &, |):
 	// 00: +
 	// 01: -
 	// 10: &
@@ -23,21 +23,20 @@ module control (
 	reg [1:0] alu_sel;
 	
 	
-	// selects if writeBack D or M in the register file
+	// seleciona entre writeBack D ou M no register file
 	// 0: D
 	// 1: M
 	reg write_back_sel;
-	// enable write into the register 
-	// 1: enables writing
+	// 1: habilita write no registro
 	reg write_back_en;
-	// choose the target register
+	// seleciona registro alvo
 	reg [4:0] write_back_reg;
 	
 	
-	// selects read or write in the data memory
+	// seleciona leitura ou escrita na memória de dados
 	reg wr_rd;
 	
-	// register format (R-Type)
+	// formato de registro (R-Type)
 	wire [5:0] op;
 	wire [4:0] rs;
 	wire [4:0] rt;
@@ -45,20 +44,20 @@ module control (
 	wire [4:0] shamt;
 	wire [5:0] funct;
 	
-	// assigning the bits of instr
+	// atribuindo corretamente os bits de instr
 	assign op = instr[31:26];
 	assign rs = instr[25:21];
    assign rt = instr[20:16];
-   //assign rd = instr[15:11];
+   // rd = instr[15:11];
 	assign shamt = instr[10:6];
 	assign funct = instr[5:0];
 	
 	always @(instr) begin
 		
-		// default values
+		// valores padrão
 		d_sel = 1;
 		c_sel = 1;
-		alu_sel = 3; //operation &
+		alu_sel = 3; // operação &
 		write_back_sel = 0;
 		write_back_en = 0;
 		write_back_reg = 0;
@@ -66,13 +65,13 @@ module control (
 		b_reg = 0;
 		rd = 0;
 		
-		// op: (+, -, &, |) -> Group   = 1; 
-		//     (lw)         -> Group+1 = 2; 
-		//     (sw)         -> Group+2 = 3 
+		// op: (+, -, &, |) -> Grupo   = 1; 
+		//     (lw)         -> Grupo+1 = 2; 
+		//     (sw)         -> Grupo+2 = 3 
 		case(op)
-			// R-Type for (+, -, &, |)
+			// R-Type para (+, -, &, |)
 			1: begin
-				// shamt in our case has to be 10
+				// shamt no nosso caso deve ser 10
 				if(shamt == 10) begin
 					a_reg = rs;
 					b_reg = rt;
@@ -85,13 +84,13 @@ module control (
 					
 					case(funct)
 					
-						// Add
+						// Soma
 						32: begin
 							d_sel = 0;
 							alu_sel = 2'b00;
 						end
 						
-						// Subtract
+						// Subtração
 						34: begin
 							d_sel = 0;
 							alu_sel = 2'b01;
@@ -109,7 +108,7 @@ module control (
 							alu_sel = 2'b11;
 						end
 						
-						// Multiplier
+						// Multiplicação
 						50: begin
 							d_sel = 1;
 							alu_sel = 2'b00;

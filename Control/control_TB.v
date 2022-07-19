@@ -1,4 +1,4 @@
-`timescale 1ns/10ps
+`timescale 1ns/100ps
 
 module control_TB();
 
@@ -12,7 +12,7 @@ module control_TB();
 
 	initial begin
 		
-		// load A: to initialize
+		// load A: para inicializar
 		instr = 32'b000010_00101_00000_0001_1001_0000_0000;
 		#10
 		$display("Instruction = %b    |    output_control = %b", instr, output_control);
@@ -41,25 +41,25 @@ module control_TB();
 		#10
 		$display("Instruction = %b    |    output_control = %b", instr, output_control);
 		
-		// multiply: A*B
+		// multiplicação: A*B
 		#50 
 		instr = 32'b000001_00000_00001_01000_01010_110010;
 		#10
 		$display("Instruction = %b    |    output_control = %b", instr, output_control);
 		
-		// add: C+D
+		// soma: C+D
 		#50 
 		instr = 32'b000001_00010_00011_01001_01010_100000;
 		#10
 		$display("Instruction = %b    |    output_control = %b", instr, output_control);
 		
-		// subtract: (A*B)-(C+D)
+		// subtração: (A*B)-(C+D)
 		#50 
 		instr = 32'b000001_01000_01001_01010_01010_100010;
 		#10
 		$display("Instruction = %b    |    output_control = %b", instr, output_control);
 		
-		// store the result
+		// store: guarda resultado
 		#50 
 		instr = 32'b000011_00101_01010_0001_1100_1111_1111;
 		#10
