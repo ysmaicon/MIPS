@@ -260,7 +260,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "entrada[0]",
+					"name" : "rs[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rs[3]",
 					"strict" : false
 				},
 				{
@@ -272,15 +276,63 @@
 					"strict" : false
 				},
 				{
-					"name" : "rs[3]",
-					"strict" : false
-				},
-				{
-					"name" : "rs[2]",
-					"strict" : false
-				},
-				{
 					"name" : "rs[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rt[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "rt[4]",
+					"strict" : false
+				},
+				{
+					"name" : "entrada[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "wr",
+					"strict" : false
+				},
+				{
+					"name" : "controle[0]",
+					"strict" : false
+				},
+				{
+					"name" : "controle[1]",
+					"strict" : false
+				},
+				{
+					"name" : "controle[2]",
+					"strict" : false
+				},
+				{
+					"name" : "controle[4]",
+					"strict" : false
+				},
+				{
+					"name" : "controle[3]",
 					"strict" : false
 				},
 				{
@@ -405,58 +457,6 @@
 				},
 				{
 					"name" : "entrada[31]",
-					"strict" : false
-				},
-				{
-					"name" : "rt[1]",
-					"strict" : false
-				},
-				{
-					"name" : "rt[0]",
-					"strict" : false
-				},
-				{
-					"name" : "rt[3]",
-					"strict" : false
-				},
-				{
-					"name" : "rt[2]",
-					"strict" : false
-				},
-				{
-					"name" : "rt[4]",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
-					"strict" : false
-				},
-				{
-					"name" : "clock",
-					"strict" : false
-				},
-				{
-					"name" : "wr",
-					"strict" : false
-				},
-				{
-					"name" : "controle[0]",
-					"strict" : false
-				},
-				{
-					"name" : "controle[2]",
-					"strict" : false
-				},
-				{
-					"name" : "controle[4]",
-					"strict" : false
-				},
-				{
-					"name" : "controle[1]",
-					"strict" : false
-				},
-				{
-					"name" : "controle[3]",
 					"strict" : false
 				}
 			]

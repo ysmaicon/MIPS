@@ -1,5 +1,5 @@
 EDA Netlist Writer report for RegisterFile
-Mon Jul 18 15:12:37 2022
+Tue Jul 19 00:33:55 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Jul 18 15:12:37 2022 ;
+; EDA Netlist Writer Status ; Successful - Tue Jul 19 00:33:55 2022 ;
 ; Revision Name             ; RegisterFile                          ;
 ; Top-level Entity Name     ; registerfile                          ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -88,7 +88,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Jul 18 15:12:35 2022
+    Info: Processing started: Tue Jul 19 00:33:50 2022
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off RegisterFile -c RegisterFile
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file RegisterFile_7_1200mv_100c_slow.vo in folder "D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/RegisterFile/simulation/modelsim/" for EDA simulation tool
@@ -100,9 +100,9 @@ Info (204019): Generated file RegisterFile_7_1200mv_-40c_v_slow.sdo in folder "D
 Info (204019): Generated file RegisterFile_min_1200mv_-40c_v_fast.sdo in folder "D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/RegisterFile/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file RegisterFile_v.sdo in folder "D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/RegisterFile/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4733 megabytes
-    Info: Processing ended: Mon Jul 18 15:12:37 2022
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4740 megabytes
+    Info: Processing ended: Tue Jul 19 00:33:55 2022
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 
