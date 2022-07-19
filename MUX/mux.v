@@ -4,6 +4,6 @@ module mux(A,B,S,X);
 	input S;
 	output [31:0] X;
 	 
-	assign X = (!S) ? B : A;
+	assign X = (S) ? B : A;
 
 endmodule

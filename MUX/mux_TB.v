@@ -1,17 +1,16 @@
 `timescale 1ns/100ps
 module mux_TB();
 
-	// test vector input registers
+	// vetores dos registros de entrada
 	reg [31:0] A;
 	reg [31:0] B;
 	reg S;
 	
 	// wires                                               
-	wire X;
-
-	// assign statements                           
+	wire [31:0] X;
+                         
 	mux DUT (
-	// port map - connection between master ports and signals/registers   
+	   // port map - conexões entre ports e sinais/registros   
 		.A(A),
 		.B(B),
 		.S(S),
@@ -19,18 +18,22 @@ module mux_TB();
 	);
 	
 	initial begin
-		S='b0;
-		A='b0;
-		B='b0;
+		S <= 0;
+		A <= 32'h00000000;
+		B <= 32'h00000000;
 		#40
 		
-		S='b0;
-		A='hFFFF;
-		B='b0;
+		S <= 1;
+		A <= 32'h0000FFFF;
+		B <= 32'hFFFF0000;
 		#40
 		
-		S='b1;
+		S = 1;
+		A <= 32'h12874321;
+		B <= 32'h52001543;
 		#40	
+		
+		S = 0;
 		
 		$display("Running testbench");  
 	end
