@@ -1,34 +1,34 @@
-`timescale 1ns/10ps
+`timescale 1ns/100ps
 
 module registerfile_TB();
 	
-	reg clock, reset;
-	reg [4:0] controle;
+	reg clock, rst;
+	reg [4:0] control;
 	reg [4:0]
 	rs, rt;
-	reg [31:0] entrada;
-	reg wr;
-	wire [31:0] saidaA, saidaB;
+	reg [31:0] write_back_reg;
+	reg wr; // write_back_en
+	wire [31:0] outputA, outputB;
 
 	registerfile DUT(
 		.clock(clock),
-		.reset(reset),
+		.rst(rst),
 		.rs(rs),
 		.rt(rt),
-		.controle(controle),
-		.entrada(entrada),
-		.saidaA(saidaA),
-		.saidaB(saidaB),
+		.control(control),
+		.write_back_reg(write_back_reg),
+		.outputA(outputA),
+		.outputB(outputB),
 		.wr(wr)
 	);
 	
 	integer i = 0;
 
 	initial begin
-		controle = 0;
+		control = 0;
 		clock = 0;
-		reset = 0;
-		entrada = 250;
+		rst = 0;
+		write_back_reg = 250;
 		wr = 1;
 		rs=0;
 		rt=1;
@@ -36,27 +36,27 @@ module registerfile_TB();
 		for(i=0;i<7;i=i+1)
 		begin
 			#40
-			entrada = entrada+25;
-			controle = controle+1;
+			write_back_reg = write_back_reg+25;
+			control = control+1;
 			rs=5;
 			rt=i;
 		end	
 		
 		#40
-		entrada = entrada+25;
-		controle = controle+1;
+		write_back_reg = write_back_reg+25;
+		control = control+1;
 		rs=0;
 		rt=4;
 		
 		#40
-		entrada = entrada+25;
-		controle = controle+1;
+		write_back_reg = write_back_reg+25;
+		control = control+1;
 		rs=8;
 		rt=9;
 		
 		#40
-		entrada = entrada+25;
-		controle = controle+1;
+		write_back_reg = write_back_reg+25;
+		control = control+1;
 		rs=8;
 		rt=9;
 		
