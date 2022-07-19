@@ -1,0 +1,77 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/MUX/simulation/modelsim
+vhard_block
+Z1 !s110 1657930899
+!i10b 1
+!s100 c`0cXd@:b_InhOe>j>?O72
+IDTS5jHecH@;MPBGdSAY5W2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1657926764
+Z4 8mux_7_1200mv_100c_slow.vo
+Z5 Fmux_7_1200mv_100c_slow.vo
+L0 1968
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1657930898.000000
+Z8 !s107 mux_7_1200mv_100c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|mux_7_1200mv_100c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+vmux
+R1
+!i10b 1
+!s100 d3zAh];hWOY73Sid>nif[1
+Ia<Zf@D>j:Cfnj30`oL1eo1
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
+vmux_TB
+R1
+!i10b 1
+!s100 7UZ7<RHQF572GV2Y[=HNc0
+I[afRJoC>8ekUf=DTT0K:?3
+R2
+R0
+w1657930888
+8D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/MUX/mux_TB.v
+FD:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/MUX/mux_TB.v
+L0 2
+R6
+r1
+!s85 0
+31
+!s108 1657930899.000000
+!s107 D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/MUX/mux_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/MUX|D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/MUX/mux_TB.v|
+!i113 1
+R10
+!s92 -vlog01compat -work work {+incdir+D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/MUX}
+R12
+nmux_@t@b

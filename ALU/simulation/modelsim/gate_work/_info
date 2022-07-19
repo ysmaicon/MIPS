@@ -1,0 +1,77 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/ALU/simulation/modelsim
+valu
+Z1 !s110 1658181406
+!i10b 1
+!s100 e:<n1aomaHi66?9NzmCV;1
+Ik@Y^U=zW671<@4`=aTRgo0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1658180913
+Z4 8alu_7_1200mv_100c_slow.vo
+Z5 Falu_7_1200mv_100c_slow.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1658181406.000000
+Z8 !s107 alu_7_1200mv_100c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|alu_7_1200mv_100c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+valu_TB
+R1
+!i10b 1
+!s100 IS9j^kmdkY4I[@`JkURhj3
+IEOb7D?BHlCldm3;Z9Uh7D3
+R2
+R0
+w1658181391
+8D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/ALU/alu_TB.v
+FD:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/ALU/alu_TB.v
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+!s107 D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/ALU/alu_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/ALU|D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/ALU/alu_TB.v|
+!i113 1
+R10
+!s92 -vlog01compat -work work {+incdir+D:/QuartusLite/Projeto de Sistemas Digitais/MIPS_CPU/ALU}
+R12
+nalu_@t@b
+vhard_block
+R1
+!i10b 1
+!s100 `ioXP7icWHa=Qao2kABFi2
+IY5e1XJ^JbkOl?JCk=FbcG0
+R2
+R0
+R3
+R4
+R5
+L0 3789
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
