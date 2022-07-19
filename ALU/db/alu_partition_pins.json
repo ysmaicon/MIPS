@@ -136,7 +136,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[0]",
+					"name" : "inputB[0]",
 					"strict" : false
 				},
 				{
@@ -144,255 +144,255 @@
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[0]",
+					"name" : "inputA[0]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[1]",
+					"name" : "inputB[1]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[1]",
+					"name" : "inputA[1]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[2]",
+					"name" : "inputB[2]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[2]",
+					"name" : "inputA[2]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[3]",
+					"name" : "inputB[3]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[3]",
+					"name" : "inputA[3]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[4]",
+					"name" : "inputB[4]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[4]",
+					"name" : "inputA[4]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[5]",
+					"name" : "inputB[5]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[5]",
+					"name" : "inputA[5]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[6]",
+					"name" : "inputB[6]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[6]",
+					"name" : "inputA[6]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[7]",
+					"name" : "inputB[7]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[7]",
+					"name" : "inputA[7]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[8]",
+					"name" : "inputB[8]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[8]",
+					"name" : "inputA[8]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[9]",
+					"name" : "inputB[9]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[9]",
+					"name" : "inputA[9]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[10]",
+					"name" : "inputB[10]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[10]",
+					"name" : "inputA[10]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[11]",
+					"name" : "inputB[11]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[11]",
+					"name" : "inputA[11]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[12]",
+					"name" : "inputB[12]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[12]",
+					"name" : "inputA[12]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[13]",
+					"name" : "inputB[13]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[13]",
+					"name" : "inputA[13]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[14]",
+					"name" : "inputB[14]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[14]",
+					"name" : "inputA[14]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[15]",
+					"name" : "inputB[15]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[15]",
+					"name" : "inputA[15]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[16]",
+					"name" : "inputB[16]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[16]",
+					"name" : "inputA[16]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[17]",
+					"name" : "inputB[17]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[17]",
+					"name" : "inputA[17]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[18]",
+					"name" : "inputB[18]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[18]",
+					"name" : "inputA[18]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[19]",
+					"name" : "inputB[19]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[19]",
+					"name" : "inputA[19]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[20]",
+					"name" : "inputB[20]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[20]",
+					"name" : "inputA[20]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[21]",
+					"name" : "inputB[21]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[21]",
+					"name" : "inputA[21]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[22]",
+					"name" : "inputB[22]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[22]",
+					"name" : "inputA[22]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[23]",
+					"name" : "inputB[23]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[23]",
+					"name" : "inputA[23]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[24]",
+					"name" : "inputB[24]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[24]",
+					"name" : "inputA[24]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[25]",
+					"name" : "inputB[25]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[25]",
+					"name" : "inputA[25]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[26]",
+					"name" : "inputB[26]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[26]",
+					"name" : "inputA[26]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[27]",
+					"name" : "inputB[27]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[27]",
+					"name" : "inputA[27]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[28]",
+					"name" : "inputB[28]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[28]",
+					"name" : "inputA[28]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[29]",
+					"name" : "inputB[29]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[29]",
+					"name" : "inputA[29]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[30]",
+					"name" : "inputB[30]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[30]",
+					"name" : "inputA[30]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaB[31]",
+					"name" : "inputB[31]",
 					"strict" : false
 				},
 				{
-					"name" : "entradaA[31]",
+					"name" : "inputA[31]",
 					"strict" : false
 				}
 			]

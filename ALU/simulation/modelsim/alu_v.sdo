@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "alu")
-  (DATE "07/18/2022 18:48:34")
+  (DATE "07/19/2022 02:49:05")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition")
@@ -358,7 +358,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[0\]\~input)
+    (INSTANCE inputA\[0\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (712:712:712) (822:822:822))
@@ -367,7 +367,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[0\]\~input)
+    (INSTANCE inputB\[0\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -463,7 +463,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[1\]\~input)
+    (INSTANCE inputB\[1\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (692:692:692) (802:802:802))
@@ -472,7 +472,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[1\]\~input)
+    (INSTANCE inputA\[1\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (762:762:762))
@@ -540,7 +540,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[2\]\~input)
+    (INSTANCE inputA\[2\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (760:760:760))
@@ -549,7 +549,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[2\]\~input)
+    (INSTANCE inputB\[2\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -617,7 +617,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[3\]\~input)
+    (INSTANCE inputB\[3\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -638,7 +638,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[3\]\~input)
+    (INSTANCE inputA\[3\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (760:760:760))
@@ -694,7 +694,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[4\]\~input)
+    (INSTANCE inputA\[4\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (692:692:692) (802:802:802))
@@ -703,7 +703,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[4\]\~input)
+    (INSTANCE inputB\[4\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (712:712:712) (820:820:820))
@@ -771,7 +771,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[5\]\~input)
+    (INSTANCE inputB\[5\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -780,7 +780,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[5\]\~input)
+    (INSTANCE inputA\[5\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -848,7 +848,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[6\]\~input)
+    (INSTANCE inputB\[6\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (780:780:780))
@@ -857,7 +857,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[6\]\~input)
+    (INSTANCE inputA\[6\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (722:722:722) (832:832:832))
@@ -925,7 +925,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[7\]\~input)
+    (INSTANCE inputA\[7\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (662:662:662) (772:772:772))
@@ -934,7 +934,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[7\]\~input)
+    (INSTANCE inputB\[7\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -1002,7 +1002,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[8\]\~input)
+    (INSTANCE inputA\[8\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (662:662:662) (772:772:772))
@@ -1011,7 +1011,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[8\]\~input)
+    (INSTANCE inputB\[8\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -1079,7 +1079,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[9\]\~input)
+    (INSTANCE inputB\[9\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (662:662:662) (772:772:772))
@@ -1100,7 +1100,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[9\]\~input)
+    (INSTANCE inputA\[9\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -1156,7 +1156,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[10\]\~input)
+    (INSTANCE inputB\[10\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -1177,7 +1177,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[10\]\~input)
+    (INSTANCE inputA\[10\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -1233,7 +1233,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[11\]\~input)
+    (INSTANCE inputA\[11\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -1242,7 +1242,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[11\]\~input)
+    (INSTANCE inputB\[11\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -1310,7 +1310,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[12\]\~input)
+    (INSTANCE inputA\[12\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -1319,7 +1319,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[12\]\~input)
+    (INSTANCE inputB\[12\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (712:712:712) (822:822:822))
@@ -1387,7 +1387,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[13\]\~input)
+    (INSTANCE inputB\[13\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (712:712:712) (820:820:820))
@@ -1396,7 +1396,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[13\]\~input)
+    (INSTANCE inputA\[13\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -1464,7 +1464,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[14\]\~input)
+    (INSTANCE inputB\[14\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -1485,7 +1485,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[14\]\~input)
+    (INSTANCE inputA\[14\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (662:662:662) (770:770:770))
@@ -1541,7 +1541,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[15\]\~input)
+    (INSTANCE inputB\[15\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (790:790:790))
@@ -1562,7 +1562,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[15\]\~input)
+    (INSTANCE inputA\[15\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -1618,7 +1618,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[16\]\~input)
+    (INSTANCE inputA\[16\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (632:632:632) (740:740:740))
@@ -1627,7 +1627,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[16\]\~input)
+    (INSTANCE inputB\[16\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -1695,7 +1695,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[17\]\~input)
+    (INSTANCE inputA\[17\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (760:760:760))
@@ -1704,7 +1704,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[17\]\~input)
+    (INSTANCE inputB\[17\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -1772,7 +1772,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[18\]\~input)
+    (INSTANCE inputB\[18\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -1793,7 +1793,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[18\]\~input)
+    (INSTANCE inputA\[18\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (662:662:662) (772:772:772))
@@ -1849,7 +1849,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[19\]\~input)
+    (INSTANCE inputA\[19\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (692:692:692) (802:802:802))
@@ -1858,7 +1858,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[19\]\~input)
+    (INSTANCE inputB\[19\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (662:662:662) (772:772:772))
@@ -1926,7 +1926,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[20\]\~input)
+    (INSTANCE inputA\[20\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (692:692:692) (802:802:802))
@@ -1935,7 +1935,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[20\]\~input)
+    (INSTANCE inputB\[20\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (762:762:762))
@@ -2003,7 +2003,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[21\]\~input)
+    (INSTANCE inputB\[21\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (762:762:762))
@@ -2024,7 +2024,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[21\]\~input)
+    (INSTANCE inputA\[21\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (692:692:692) (802:802:802))
@@ -2080,7 +2080,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[22\]\~input)
+    (INSTANCE inputA\[22\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (692:692:692) (800:800:800))
@@ -2089,7 +2089,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[22\]\~input)
+    (INSTANCE inputB\[22\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (712:712:712) (822:822:822))
@@ -2157,7 +2157,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[23\]\~input)
+    (INSTANCE inputB\[23\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -2166,7 +2166,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[23\]\~input)
+    (INSTANCE inputA\[23\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -2234,7 +2234,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[24\]\~input)
+    (INSTANCE inputB\[24\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (712:712:712) (822:822:822))
@@ -2255,7 +2255,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[24\]\~input)
+    (INSTANCE inputA\[24\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (692:692:692) (802:802:802))
@@ -2311,7 +2311,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[25\]\~input)
+    (INSTANCE inputA\[25\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (762:762:762))
@@ -2320,7 +2320,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[25\]\~input)
+    (INSTANCE inputB\[25\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))
@@ -2388,7 +2388,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[26\]\~input)
+    (INSTANCE inputB\[26\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (762:762:762))
@@ -2397,7 +2397,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[26\]\~input)
+    (INSTANCE inputA\[26\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (780:780:780))
@@ -2465,7 +2465,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[27\]\~input)
+    (INSTANCE inputA\[27\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -2474,7 +2474,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[27\]\~input)
+    (INSTANCE inputB\[27\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (662:662:662) (772:772:772))
@@ -2542,7 +2542,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[28\]\~input)
+    (INSTANCE inputA\[28\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (702:702:702) (812:812:812))
@@ -2551,7 +2551,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[28\]\~input)
+    (INSTANCE inputB\[28\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -2619,7 +2619,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[29\]\~input)
+    (INSTANCE inputA\[29\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (762:762:762))
@@ -2628,7 +2628,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[29\]\~input)
+    (INSTANCE inputB\[29\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (792:792:792))
@@ -2696,7 +2696,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[30\]\~input)
+    (INSTANCE inputA\[30\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (762:762:762))
@@ -2705,7 +2705,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[30\]\~input)
+    (INSTANCE inputB\[30\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (692:692:692) (802:802:802))
@@ -2773,7 +2773,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaA\[31\]\~input)
+    (INSTANCE inputA\[31\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (662:662:662) (772:772:772))
@@ -2782,7 +2782,7 @@
   )
   (CELL
     (CELLTYPE "cycloneiv_io_ibuf")
-    (INSTANCE entradaB\[31\]\~input)
+    (INSTANCE inputB\[31\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (672:672:672) (782:782:782))

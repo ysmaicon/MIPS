@@ -1,5 +1,5 @@
 Flow report for alu
-Mon Jul 18 18:48:34 2022
+Tue Jul 19 02:49:05 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Jul 18 18:48:34 2022       ;
+; Flow Status                        ; Successful - Tue Jul 19 02:49:05 2022       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; alu                                         ;
 ; Top-level Entity Name              ; alu                                         ;
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/18/2022 18:47:06 ;
+; Start date & time ; 07/19/2022 02:46:52 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; alu                 ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 66160492888810.165818082630532         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 62580489088565.165820961022540         ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; alu_TB         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; alu_TB                                 ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
@@ -106,12 +106,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:27     ; 1.0                     ; 4837 MB             ; 00:01:05                           ;
-; Fitter               ; 00:00:37     ; 1.0                     ; 6030 MB             ; 00:01:01                           ;
-; Assembler            ; 00:00:09     ; 1.0                     ; 4760 MB             ; 00:00:09                           ;
-; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4890 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4725 MB             ; 00:00:02                           ;
-; Total                ; 00:01:20     ; --                      ; --                  ; 00:02:21                           ;
+; Analysis & Synthesis ; 00:00:51     ; 1.0                     ; 4812 MB             ; 00:01:24                           ;
+; Fitter               ; 00:00:53     ; 1.0                     ; 5620 MB             ; 00:01:02                           ;
+; Assembler            ; 00:00:11     ; 1.0                     ; 4753 MB             ; 00:00:11                           ;
+; Timing Analyzer      ; 00:00:07     ; 1.0                     ; 4839 MB             ; 00:00:07                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4721 MB             ; 00:00:04                           ;
+; Total                ; 00:02:06     ; --                      ; --                  ; 00:02:48                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -120,11 +120,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-1F0FSOT  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-1F0FSOT  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-1F0FSOT  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-1F0FSOT  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-1F0FSOT  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-5JCMOTN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-5JCMOTN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-5JCMOTN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-5JCMOTN  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-5JCMOTN  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
