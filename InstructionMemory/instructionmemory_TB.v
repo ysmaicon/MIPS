@@ -21,11 +21,12 @@ module instructionmemory_TB;
 		rst = 1;
 		#10 rst = 0;
 		
-		for (i=0;i<32;i=i+1)
-		begin
-			#120
-			pc=i;			
-		end
+		for (i=0;i<26;i=i+1)
+			begin
+				#120
+				pc=i;		
+				$display("PC = %d     |    InstructionOut = %b", pc, instruction);
+			end
 end
 
 initial
