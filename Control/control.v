@@ -151,7 +151,7 @@ module control (
 		endcase
 	end
 	
-	assign output_control = {{5'b0}, rs, rt, rd, d_sel, c_sel, alu_sel, wr_rd, write_back_sel, write_back_en, write_back_reg};
-	
+	assign output_control = {{5'b0},    rs,       rt,       rd,    d_sel,  c_sel, alu_sel, wr_rd, write_back_sel, write_back_en, write_back_reg};
+	//                     	[31:27] | [26:22] | [21:17] | [16:12] | [11] | [10] |  [9:8] |  [7] |      [6]      |      [5]     |      [4:0]
 endmodule
 					
