@@ -43,7 +43,7 @@ module cpu(CLK,reset,resetclk,cs,wr_rd,ADDR,Data_BUS_WRITE,Data_BUS_READ,WriteBa
 	wire [31:0]output_mux_write_back;
 	
 	// assign
-	assign wr_rd = output_register_ctrl_2[0]; // sinal para dispositivos externos para indicar se é uma operação de leitura ou escrita
+	assign wr_rd = output_register_ctrl_2[7]; // sinal para dispositivos externos para indicar se é uma operação de leitura ou escrita
 	assign cs = output_addrdecoding;
 	assign ADDR = output_register_D_1;
 	assign Data_BUS_WRITE = output_register_B_2;
@@ -84,7 +84,7 @@ module cpu(CLK,reset,resetclk,cs,wr_rd,ADDR,Data_BUS_WRITE,Data_BUS_READ,WriteBa
 		.write_back_reg(output_mux_write_back),
 		.outputA(output_registerfile_A),
 		.outputB(output_registerfile_B),
-		.wr(output_register_ctrl_3[7])
+		.wr(output_register_ctrl_3[5])
 	);
 	
 	control control_MIPS(
@@ -218,6 +218,7 @@ module cpu(CLK,reset,resetclk,cs,wr_rd,ADDR,Data_BUS_WRITE,Data_BUS_READ,WriteBa
 	////////////////////////////////////////////////////////////
 	
 	//Write Back
+	
 	mux mux_out(
 		.A(output_register_D_2),
 		.B(output_buf_memory),

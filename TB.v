@@ -40,10 +40,10 @@ module TB;
 		reset = 0;
 		resetclk = 0;
 		#15000;
-		reset = 1;
+		//reset = 0;
 		resetclk = 1;
 		#50;
-		reset = 0;
+		//reset = 0;
 		resetclk = 0;
 	end
 	
