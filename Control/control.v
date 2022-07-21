@@ -32,7 +32,6 @@ module control (
 	// seleciona registro alvo
 	reg [4:0] write_back_reg;
 	
-	
 	// seleciona leitura ou escrita na memória de dados
 	reg wr_rd;
 	
@@ -40,7 +39,7 @@ module control (
 	wire [5:0] op;
 	wire [4:0] rs;
 	wire [4:0] rt;
-	reg [4:0] rd;
+	wire [4:0] rd;
 	wire [4:0] shamt;
 	wire [5:0] funct;
 	
@@ -48,7 +47,7 @@ module control (
 	assign op = instr[31:26];
 	assign rs = instr[25:21];
    assign rt = instr[20:16];
-   // rd = instr[15:11];
+   assign rd = instr[15:11];
 	assign shamt = instr[10:6];
 	assign funct = instr[5:0];
 	
@@ -63,7 +62,7 @@ module control (
 		write_back_reg = 0;
 		a_reg = 0;
 		b_reg = 0;
-		rd = 0;
+		wr_rd = 0;
 		
 		// op: (+, -, &, |) -> Grupo   = 1; 
 		//     (lw)         -> Grupo+1 = 2; 
@@ -75,7 +74,6 @@ module control (
 				if(shamt == 10) begin
 					a_reg = rs;
 					b_reg = rt;
-					rd = instr[15:11];
 					c_sel = 0;
 					wr_rd = 0;
 					write_back_sel = 0;
@@ -123,7 +121,7 @@ module control (
 			2: begin
 				a_reg = rs;
 				b_reg = 0;
-				rd = 0;
+				wr_rd = 0;
 				d_sel = 0;
 				c_sel = 1;
 				alu_sel = 2'b00;
@@ -137,7 +135,7 @@ module control (
 			3: begin
 				a_reg = rs;
 				b_reg = rt;
-				rd = 0;
+				wr_rd = 0;
 				d_sel = 0;
 				c_sel = 1;
 				alu_sel = 2'b00;
