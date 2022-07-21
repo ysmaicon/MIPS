@@ -69,7 +69,7 @@ set_global_assignment -name QIP_FILE PLL/PLL.qip
 set_global_assignment -name VERILOG_FILE PC/PC.v
 set_global_assignment -name VERILOG_FILE MUX/mux.v
 set_global_assignment -name VERILOG_FILE Multiplicador/Counter/Counter.v
-set_global_assignment -name VERILOG_FILE Multiplicador/Control/Control.v
+set_global_assignment -name VERILOG_FILE Multiplicador/Control_MULTI/Control_MULTI.v
 set_global_assignment -name VERILOG_FILE Multiplicador/Adder/Adder.v
 set_global_assignment -name VERILOG_FILE Multiplicador/ACC/ACC.v
 set_global_assignment -name VERILOG_FILE Multiplicador/Multiplicador.v

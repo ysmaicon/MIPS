@@ -1,3 +1,46 @@
+/*
+a) Qual a latência do sistema?
+A latência do sistema é de 5 pulsos de clock, ou seja, cada instrução é executada em 5 ciclos de clock:
+- primeiro lê a instrução na memória e carrega no registro de INSTR
+- depois realiza a decodificação
+- faz uma operação, seja ela +, -, |, & ou *
+- leitura/escrita na memória de dados
+- escreve no RegisterFile, através do WriteBack
+
+b) Qual o throughput do sistema?
+O throughput do sistema é de 32bits/clk, no caso, uma instrução por clk, a partir do momento em que o pipeline estiver cheio
+
+c) Qual a máxima frequência operacional entregue pelo Time Quest Timing Analizer para o multiplicador e para o sistema? (Indique a FPGA utilizada)
+FPGA utilizada: Cyclone IV GX EP4CGX150DF31I7AD
+Frequência Máxima Operacional do Sistema: 
+-> Slow 100C: 243.19 MHz 
+->  Slow 40C: 269.11 MHz
+Frequência Máxima Operacional do Multiplicador:
+-> Slow 1200mV - 40C: 368,73 MHz
+-> Slow 1200mv 100C:: 314,07MHz 
+
+d) Qual a máxima frequência de operação do sistema? (Indique a FPGA utilizada)
+A máxima frequência de operação do sistema é dada da seguinte forma:
+Frequência Máxima Operacional do Sistema = Frequência Operacional do Multiplicador / 34, onde 34 corresponde ao número de vezes que a frequência do sistema deve ser menor em relação ao multiplicador calculado por (2N+2), com N= número de bits.
+Logo,	
+Frequência Máxima Operacional do Sistema para  Slow 100C = 243.19 MHz/34 = 7,15 MHz
+Frequência Máxima Operacional do Sistema para  Slow 40C = 269.11 MHz/34 = 7,92 MHz
+FPGA utilizada: Cyclone IV GX EP4CGX150DF31I7AD
+
+e) Com a arquitetura implementada, a expressão (A*B) – (C+D) é executada corretamente (se executada em sequência ininterrupta)? Por quê? O que pode ser feito para que a expressão seja calculada corretamente?
+Não é executada corretamente. Isso deve-se ao fato de que não está sendo respeitado o tempo que leva para ser carregado um valor no registrador, já que as instruções leem do RegisterFile antes de serem guardadas. Dessa forma, é necessário adicionar “bolhas” para que passe a quantidade de tempo mínimo de leitura de dados antes de fazer uma operação, como foi feito na segunda parte do código do módulo de Instruction Memory.
+
+f) Analisando a sua implementação de dois domínios de clock diferentes, haverá problemas com metaestabilidade? Por que?
+Não há problema de metaestabilidade, pois o clock do sistema foi feito, por meio da PLL, para ser 34 vezes o clock do multiplicador e, assim, as bordas de subida dos dois clocks coincidem entre si quando necessário.
+
+g) A aplicação de um multiplicador do tipo utilizado, no sistema MIPS sugerido, é eficiente em termos de velocidade? Por que?
+Não é eficiente, pois o multiplicador não possui paralelismo e o clock do sistema é limitado pelo multiplicador, que precisa de 34 clocks para realizar sua operação.
+h) Cite modificações cabíveis na arquitetura do sistema que tornaria o sistema mais rápido (frequência de operação maior). Para cada modificação sugerida, qual a nova latência e throughput do sistema?
+O mais importante para tornar o sistema mais rápido é modificar o multiplicador. Assim, pode-se aplicar paralelismo no multiplicador, implementando pipeline. Nesse caso, seria possível fazer mais instruções em paralelo, o que aumentaria o throughput e manteria a latência. No entanto, isso traria como ponto negativo ter mais pipelines hazzards. Outra modificação que poderia ser feita seria de usar um mesmo clock com enable em todos os registros do sistema. Dessa forma, o sistema esperaria apenas pelo multiplicador se fosse feita uma multiplicação, ou seja, a latência e throughput seriam os mesmos, em quantidade de clocks, mas com uma frequência maior. Essa possibilidade deveria ser considerada viável dependendo do número de operações de multiplicação a serem executadas.
+
+*/
+
+
 module cpu(CLK,reset,resetclk,cs,wr_rd,ADDR,Data_BUS_WRITE,Data_BUS_READ,WriteBack);
 
 	// conexões do módulo principal
