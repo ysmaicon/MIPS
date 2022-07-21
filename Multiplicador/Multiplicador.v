@@ -30,7 +30,7 @@ module Multiplicador (
 						 .Rst(Rst)
 						);
 						
-	Control CON0 (.Idle(Idle), 
+	Control_MULTI CON0 (.Idle(Idle), 
 					  .Done(Done), 
 					  .Load(Load), 
 					  .Sh(Sh), 

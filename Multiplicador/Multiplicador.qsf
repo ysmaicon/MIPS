@@ -46,16 +46,6 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
-set_global_assignment -name VERILOG_FILE Multiplicador.v
-set_global_assignment -name VERILOG_FILE Multiplicador_TB.v
-set_global_assignment -name VERILOG_FILE ACC/ACC.v
-set_global_assignment -name VERILOG_FILE ACC/ACC_TB.v
-set_global_assignment -name VERILOG_FILE Adder/Adder.v
-set_global_assignment -name VERILOG_FILE Adder/Adder_TB.v
-set_global_assignment -name VERILOG_FILE Control/Control.v
-set_global_assignment -name VERILOG_FILE Control/Control_TB.v
-set_global_assignment -name VERILOG_FILE Counter/Counter.v
-set_global_assignment -name VERILOG_FILE Counter/Counter_TB.v
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
@@ -70,5 +60,16 @@ set_global_assignment -name EDA_TEST_BENCH_FILE Multiplicador_TB.v -section_id M
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE Control_MULTI/Control_MULTI_TB.v
+set_global_assignment -name VERILOG_FILE Control_MULTI/Control_MULTI.v
+set_global_assignment -name VERILOG_FILE Multiplicador.v
+set_global_assignment -name VERILOG_FILE Multiplicador_TB.v
+set_global_assignment -name VERILOG_FILE ACC/ACC.v
+set_global_assignment -name VERILOG_FILE ACC/ACC_TB.v
+set_global_assignment -name VERILOG_FILE Adder/Adder.v
+set_global_assignment -name VERILOG_FILE Adder/Adder_TB.v
+set_global_assignment -name VERILOG_FILE Control/Control_TB.v
+set_global_assignment -name VERILOG_FILE Counter/Counter.v
+set_global_assignment -name VERILOG_FILE Counter/Counter_TB.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
